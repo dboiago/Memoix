@@ -870,7 +870,7 @@ const NAMED_HTML_ENTITIES = {
   amp: '&', quot: '"', apos: "'", lt: '<', gt: '>', nbsp: ' ',
   ndash: '\u2013', mdash: '\u2014', lsquo: '\u2018', rsquo: '\u2019',
   ldquo: '\u201C', rdquo: '\u201D', deg: '\u00B0', times: '\u00D7',
-  frac12: '\u00BD', frac14: '\u00BC', frac34: '\u00BE',
+  frac12: '\u00BD', frac14: '\u00BC', frac34: '\u00BE', frasl: '/',
 };
 function decodeHtmlEntities(text) {
   return text.replace(/&(?:#(\d+)|#x([0-9a-f]+)|([a-z][a-z0-9]*));/gi, (match, dec, hex, name) => {
@@ -1556,7 +1556,7 @@ const LEADING_GLYPH_PATTERN = /^[\s\u2610\u2611\u2612\u25a1\u25a2\u25fb\u25fc\u2
 const INVISIBLE_CHAR_PATTERN = /[\u200B\u200C\u200D\u2060\uFEFF\u00AD]/g;
 
 function stripIngredientLineNoise(text) {
-  return text.replace(INVISIBLE_CHAR_PATTERN, '').replace(LEADING_GLYPH_PATTERN, '').trim();
+  return decodeHtmlEntities(text).replace(INVISIBLE_CHAR_PATTERN, '').replace(LEADING_GLYPH_PATTERN, '').trim();
 }
 
 // Detects whether a recipe's own name signals it's a dietary adaptation of
@@ -2472,6 +2472,16 @@ async function main() {
         courseGrounded = true;
       }
 
+      // Confirmed on imbibemagazine: cocktails named "Breakfast Martini" / "Chinese Mustard Martini" were
+      // pushed to brunch/sauces by the name keywords below; on a drinks-focused site a short spirit-based
+      // ingredient list is the stronger signal.
+      if (!courseGrounded && /^drinks?$/i.test((meta.siteCourseHint || '').trim())
+          && extracted.ingredients.length > 0 && extracted.ingredients.length <= 6
+          && DRINKS_SPIRIT_PATTERN.test(extracted.ingredients.map(i => i.name || '').join(' '))) {
+        extracted.course = 'drinks';
+        courseGrounded = true;
+      }
+
       // Deterministic name-literal override -- only fills a gap, does NOT
       // outrank a real page-stated ldCourse (changed 2026-09-29, was
       // previously unconditional). Confirmed real bug that direction
@@ -2597,6 +2607,18 @@ async function main() {
           'Course has no page-level (ldCategory), name-literal, or site-level (siteCourseHint) signal to check it ' +
           'against -- model-inferred with no grounding at all.');
         flaggedForReview = true;
+      }
+
+      // imbibemagazine mixes cocktails with food, and its ldCategory is unusable, so a non-drinks course
+      // here is a bare model guess (confirmed: pound cake and chai cake came back as "mains").
+      if (extracted.course && extracted.course.trim().toLowerCase() !== 'drinks' && !courseGrounded) {
+        let mixedContentHost = false;
+        try { mixedContentHost = LD_CATEGORY_UNTRUSTED_HOSTS.has(new URL(meta.url).hostname.replace(/^www\./, '')); } catch { /* ignore */ }
+        if (mixedContentHost) {
+          logForReview(slug, meta.url, 'course-unverified-mixed-site', extracted.course,
+            'Site mixes drinks and food and has no usable category data; this non-drinks course is ungrounded.');
+          flaggedForReview = true;
+        }
       }
 
       // Same enforcement as course, one level down: subcategory is only
