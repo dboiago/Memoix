@@ -3007,6 +3007,19 @@ async function main() {
         flaggedForReview = true;
       }
 
+      // Confirmed in the full run: names that are only a unit ("Gm", "Tbsp") or a stray "Or" (amount 0).
+      const BARE_NAME_PATTERN = new RegExp(`^(?:${UNIT_ALTERNATION}|or|and|of|for|to|a|the)$`, 'i');
+      const bareNameIngredients = extracted.ingredients.filter(i => {
+        const name = typeof i === 'string' ? null : i?.name;
+        return typeof name === 'string' && BARE_NAME_PATTERN.test(name.trim());
+      });
+      if (bareNameIngredients.length > 0) {
+        logForReview(slug, meta.url, 'ingredient-name-is-unit-or-filler',
+          bareNameIngredients.map(i => `${i.name} (${i.amount ?? ''} ${i.unit ?? ''})`).join('; '),
+          'An ingredient name is only a unit word or filler word, so the real ingredient name was lost.');
+        flaggedForReview = true;
+      }
+
       if (extracted.ingredients.length === 0 && extracted.directions.length === 0) {
         logError(slug, 'empty-content', 'No ingredients or directions extracted');
         markUnrecoverable(slug, 'empty-content', 'No ingredients or directions extracted', meta.url);
