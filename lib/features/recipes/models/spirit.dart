@@ -118,46 +118,63 @@ class Spirit {
     return spirit?.name ?? value;
   }
 
+  /// Matches any of [keywords] as a whole word. The boundary is letters,
+  /// digits and underscore, so it works after accented letters (e.g. cachaça).
+  static RegExp _wholeWord(List<String> keywords) {
+    final alternatives = keywords.map(RegExp.escape).join('|');
+    return RegExp(
+      '(?<![\\p{L}\\p{N}_])(?:$alternatives)(?![\\p{L}\\p{N}_])',
+      unicode: true,
+      caseSensitive: false,
+    );
+  }
+
+  /// Detection rules in priority order (most specific first).
+  static final List<(String, RegExp)> _detectionRules = [
+    ('BOURBON', _wholeWord(['bourbon'])),
+    ('RYE', _wholeWord(['rye whiskey', 'rye whisky'])),
+    ('SCOTCH', _wholeWord(['scotch'])),
+    ('WHISKEY', _wholeWord(['whiskey', 'whisky'])),
+    ('MEZCAL', _wholeWord(['mezcal'])),
+    ('TEQUILA', _wholeWord(['tequila'])),
+    ('CACHACA', _wholeWord(['cachaça', 'cachaca'])),
+    ('PISCO', _wholeWord(['pisco'])),
+    ('COGNAC', _wholeWord(['cognac'])),
+    ('BRANDY', _wholeWord(['brandy'])),
+    ('ABSINTHE', _wholeWord(['absinthe'])),
+    ('AQUAVIT', _wholeWord(['aquavit'])),
+    ('GIN', _wholeWord(['gin'])),
+    ('VODKA', _wholeWord(['vodka'])),
+    ('RUM', _wholeWord(['rum'])),
+    ('SAKE', _wholeWord(['sake', 'saké'])),
+    ('SOJU', _wholeWord(['soju'])),
+    ('PROSECCO', _wholeWord(['prosecco'])),
+    ('CHAMPAGNE', _wholeWord(['champagne'])),
+    ('SPARKLING', _wholeWord(['sparkling wine'])),
+    ('RED_WINE', _wholeWord(['red wine'])),
+    ('WHITE_WINE', _wholeWord(['white wine'])),
+    ('ROSE_WINE', _wholeWord(['rosé', 'rose wine'])),
+    ('VERMOUTH', _wholeWord(['vermouth'])),
+    ('SHERRY', _wholeWord(['sherry'])),
+    ('PORT', _wholeWord(['port wine', 'porto'])),
+    ('AMARO', _wholeWord(['amaro'])),
+    ('APERITIF', _wholeWord(['aperol', 'campari'])),
+    ('LIQUEUR', _wholeWord(['liqueur', 'creme de'])),
+    ('BEER', _wholeWord(['beer', 'lager', 'ale'])),
+    ('CIDER', _wholeWord(['cider'])),
+    ('TEA', _wholeWord(['tea', 'barley tea'])),
+    ('COFFEE', _wholeWord(['coffee', 'espresso'])),
+  ];
+
   /// Detect spirit type from ingredient list
   /// Returns the most likely base spirit for a cocktail
   static String? detectFromIngredients(List<String> ingredients) {
     final text = ingredients.join(' ').toLowerCase();
-    
-    // Check each spirit by priority (most specific first)
-    if (text.contains('bourbon')) return 'BOURBON';
-    if (text.contains('rye whiskey') || text.contains('rye whisky')) return 'RYE';
-    if (text.contains('scotch')) return 'SCOTCH';
-    if (text.contains('whiskey') || text.contains('whisky')) return 'WHISKEY';
-    if (text.contains('mezcal')) return 'MEZCAL';
-    if (text.contains('tequila')) return 'TEQUILA';
-    if (text.contains('cachaça') || text.contains('cachaca')) return 'CACHACA';
-    if (text.contains('pisco')) return 'PISCO';
-    if (text.contains('cognac')) return 'COGNAC';
-    if (text.contains('brandy')) return 'BRANDY';
-    if (text.contains('absinthe')) return 'ABSINTHE';
-    if (text.contains('aquavit')) return 'AQUAVIT';
-    if (text.contains('gin')) return 'GIN';
-    if (text.contains('vodka')) return 'VODKA';
-    if (text.contains('rum')) return 'RUM';
-    if (text.contains('sake') || text.contains('saké')) return 'SAKE';
-    if (text.contains('soju')) return 'SOJU';
-    if (text.contains('prosecco')) return 'PROSECCO';
-    if (text.contains('champagne')) return 'CHAMPAGNE';
-    if (text.contains('sparkling wine')) return 'SPARKLING';
-    if (text.contains('red wine')) return 'RED_WINE';
-    if (text.contains('white wine')) return 'WHITE_WINE';
-    if (text.contains('rosé') || text.contains('rose wine')) return 'ROSE_WINE';
-    if (text.contains('vermouth')) return 'VERMOUTH';
-    if (text.contains('sherry')) return 'SHERRY';
-    if (text.contains('port wine') || text.contains('porto')) return 'PORT';
-    if (text.contains('amaro')) return 'AMARO';
-    if (text.contains('aperol') || text.contains('campari')) return 'APERITIF';
-    if (text.contains('liqueur') || text.contains('creme de')) return 'LIQUEUR';
-    if (text.contains('beer') || text.contains('lager') || text.contains('ale')) return 'BEER';
-    if (text.contains('cider')) return 'CIDER';
-    if (text.contains('tea') || text.contains('barley tea')) return 'TEA';
-    if (text.contains('coffee') || text.contains('espresso')) return 'COFFEE';
-    
+
+    for (final (code, pattern) in _detectionRules) {
+      if (pattern.hasMatch(text)) return code;
+    }
+
     return null;
   }
 }
