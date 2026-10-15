@@ -13,7 +13,7 @@ class UnitNormalizer {
     'tbsp': 'Tbsp',
     'tbs': 'Tbsp',  // OCR often reads "Tbs." without the 'p'
     'tb': 'Tbsp',
-    't': 'Tbsp', // Only uppercase T, lowercase t is teaspoon
+    't': 'Tbsp', // normalize() handles t (tsp) and T (Tbsp) case-sensitively first; kept for isRecognizedUnit
     
     // Volume - teaspoons
     'teaspoon': 'tsp',
@@ -36,11 +36,12 @@ class UnitNormalizer {
     'l': 'L',
     
     // Volume - millilitres
-    'milliliter': 'ml',
-    'milliliters': 'ml',
-    'millilitre': 'ml',
-    'millilitres': 'ml',
-    'mls': 'ml',
+    'ml': 'mL',
+    'milliliter': 'mL',
+    'milliliters': 'mL',
+    'millilitre': 'mL',
+    'millilitres': 'mL',
+    'mls': 'mL',
     
     // Weight - grams
     'gram': 'g',
@@ -131,6 +132,10 @@ class UnitNormalizer {
       trimmed = trimmed.substring(0, trimmed.length - 1);
     }
     
+    // Single-letter spoon units are case-sensitive: t = teaspoon, T = tablespoon.
+    if (trimmed == 't') return 'tsp';
+    if (trimmed == 'T') return 'Tbsp';
+    
     final lower = trimmed.toLowerCase();
     
     // Check for exact match in map
@@ -198,7 +203,7 @@ class UnitNormalizer {
     'lb',
     'g',
     'kg',
-    'ml',
+    'mL',
     'L',
     'can',
     'clove',

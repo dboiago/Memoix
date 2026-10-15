@@ -435,8 +435,8 @@ class UrlRecipeImporter {
     RegExp(r'\bkilogram[s]?\b', caseSensitive: false): 'kg',
     RegExp(r'\bg\b', caseSensitive: false): 'g',
     RegExp(r'\bgram[s]?\b', caseSensitive: false): 'g',
-    RegExp(r'\bml\b', caseSensitive: false): 'ml',
-    RegExp(r'\bmillilitre[s]?\b', caseSensitive: false): 'ml',
+    RegExp(r'\bml\b', caseSensitive: false): 'mL',
+    RegExp(r'\bmillilitre[s]?\b', caseSensitive: false): 'mL',
     RegExp(r'\bl\b', caseSensitive: false): 'L',
     RegExp(r'\blitre[s]?\b', caseSensitive: false): 'L',
   };

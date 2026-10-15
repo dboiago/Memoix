@@ -253,9 +253,11 @@ class ShoppingListController {
   }
 
   // ── Unit-system membership sets (after UnitNormalizer + normalizeUnit, lowercase) ──
+  // The metric volume set holds canonical notation and is matched via
+  // UnitNormalizer.normalize, so legacy "ml" and "mL" bucket keys both match.
 
   /// Metric volume units.
-  static const _metricVol = {'ml', 'l'};
+  static const _metricVol = {'mL', 'L'};
 
   /// Imperial volume units.
   static const _imperialVol = {'tsp', 'tbsp', 'fl oz', 'c', 'pt', 'qt', 'gal'};
@@ -273,7 +275,7 @@ class ShoppingListController {
   /// Returns a named record `(unit, qty)` on success, null when units are
   /// cross-system, cross-dimension, or unrecognized (e.g. grams + tablespoons).
   ///
-  /// Metric targets escalate g → kg and ml → L at 1 000 units.
+  /// Metric targets escalate g → kg and mL → L at 1 000 units.
   /// Imperial volume prefers the largest unit present to avoid tiny fractions.
   static ({String unit, double qty})? _tryReduceUnits(
       Map<String, double> unitSums,) {
@@ -288,18 +290,18 @@ class ShoppingListController {
 
     final units = effectiveSums.keys.toSet();
 
-    // Metric volume: convert everything to ml, optionally escalate to L.
-    if (units.every((u) => _metricVol.contains(u))) {
+    // Metric volume: convert everything to mL, optionally escalate to L.
+    if (units.every((u) => _metricVol.contains(UnitNormalizer.normalize(u)))) {
       double total = 0.0;
       for (final entry in effectiveSums.entries) {
         final converted =
-            MeasurementConverter.convertVolume(entry.value, entry.key, 'ml');
+            MeasurementConverter.convertVolume(entry.value, entry.key, 'mL');
         if (converted == null) return null;
         total += converted;
       }
       double qty = total;
-      String u = 'ml';
-      if (total >= 1000) { qty = total / 1000.0; u = 'l'; }
+      String u = 'mL';
+      if (total >= 1000) { qty = total / 1000.0; u = 'L'; }
       final formatted = AmountUtils.format(qty);
       if (formatted.contains('.')) return null;
       return (unit: u, qty: qty);
@@ -445,7 +447,7 @@ class _TermBuilder {
       final unified = ShoppingListController._tryReduceUnits(unitSums);
       if (unified != null) {
         // Fix S1-B: restore original display casing for the resolved unit.
-        finalUnit = _unitDisplayForms[unified.unit] ?? unified.unit;
+        finalUnit = _unitDisplayForms[unified.unit.toLowerCase()] ?? unified.unit;
         finalQty = unified.qty;
       } else {
         finalUnit = 'mixed';

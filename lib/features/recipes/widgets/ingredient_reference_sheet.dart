@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/utils/amount_utils.dart';
 import '../../../core/utils/ingredient_categorizer.dart';
+import '../../../core/utils/unit_normalizer.dart';
 import '../../../core/widgets/memoix_snackbar.dart';
 import '../models/ingredient_reference.dart';
 import '../models/recipe.dart';
@@ -30,8 +31,9 @@ double _roundToPractical(double value, String unit) {
   if (_halfUnits.any((u) => u.toLowerCase() == lower)) {
     return (value * 2).round() / 2.0;
   }
-  // g/ml over 10: round to whole numbers
-  if ((lower == 'g' || lower == 'ml' || lower == 'oz') && value > 10) {
+  // g/mL over 10: round to whole numbers (legacy "ml" normalizes to "mL")
+  if ((lower == 'g' || UnitNormalizer.normalize(unit) == 'mL' || lower == 'oz') &&
+      value > 10) {
     return value.roundToDouble();
   }
   // Default: round to 1 decimal

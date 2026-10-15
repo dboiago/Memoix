@@ -13,6 +13,7 @@ import 'dart:math' as math;
 
 import 'amount_utils.dart';
 import 'ingredient_categorizer.dart';
+import 'unit_normalizer.dart';
 
 // ── Scaling-specific category enum ─────────────────────────────────────────
 
@@ -189,7 +190,7 @@ class AmountScaler {
     // Metric weight
     _UnitStep(from: 'g',    to: 'kg',   divisor: 1000), // 1000 g = 1 kg
     // Metric volume
-    _UnitStep(from: 'ml',   to: 'L',    divisor: 1000), // 1000 ml = 1 L
+    _UnitStep(from: 'mL',   to: 'L',    divisor: 1000), // 1000 mL = 1 L
   ];
 
   // ── Snap-to-grid configuration ────────────────────────────────────────────
@@ -418,8 +419,11 @@ class AmountScaler {
     bool escalated = true;
     while (escalated) {
       escalated = false;
+      // Legacy stored "ml" must match the canonical "mL" ladder step.
+      final ladderUnit =
+          UnitNormalizer.normalize(currentUnit) == 'mL' ? 'mL' : currentUnit;
       for (final step in _escalationLadder) {
-        if (step.from != currentUnit) continue;
+        if (step.from != ladderUnit) continue;
         // Check whether value / divisor is a clean integer or a "nice" fraction.
         final ratio = value / step.divisor;
         if (_isCleanRatio(ratio)) {
