@@ -415,9 +415,9 @@
       {
         "uuid": "0e552e21-4ebd-4433-81be-9a122c091d22",
         "name": "Flour",
-        "amount": "2",
-        "unit": "C 2 Tbsp",
-        "preparation": "Pastry",
+        "amount": "2/2",
+        "unit": "C/Tbsp",
+        "preparation": "Pastry; Seperate",
         "alternative": null,
         "isOptional": false,
         "section": null,
