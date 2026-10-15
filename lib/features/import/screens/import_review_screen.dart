@@ -861,7 +861,7 @@ class _ImportReviewScreenState extends ConsumerState<ImportReviewScreen> {
                       return Container(
                         padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
                         decoration: BoxDecoration(
-                          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
+                          color: theme.colorScheme.primary.withValues(alpha: 0.3),
                           border: isLast 
                           ? null 
                           : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),

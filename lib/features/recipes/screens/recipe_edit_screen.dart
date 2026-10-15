@@ -1914,7 +1914,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
         key: key,
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: theme.colorScheme.primaryContainer.withValues(alpha: 0.3),
+          color: theme.colorScheme.primary.withValues(alpha: 0.3),
           border: isLast 
               ? null 
               : Border(bottom: BorderSide(color: theme.colorScheme.outline.withValues(alpha: 0.2))),
