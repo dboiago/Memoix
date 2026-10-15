@@ -22,6 +22,7 @@ class UnitNormalizer {
     'ts': 'tsp',
     
     // Volume - fluid ounces
+    'fl oz': 'fl oz',
     'fluid ounce': 'fl oz',
     'fluid ounces': 'fl oz',
     'fl. oz': 'fl oz',
@@ -44,6 +45,7 @@ class UnitNormalizer {
     'mls': 'mL',
     
     // Weight - grams
+    'g': 'g',
     'gram': 'g',
     'grams': 'g',
     'gr': 'g',
@@ -51,6 +53,7 @@ class UnitNormalizer {
     'gms': 'g',
     
     // Weight - kilograms
+    'kg': 'kg',
     'kilogram': 'kg',
     'kilograms': 'kg',
     'kilo': 'kg',
@@ -58,15 +61,18 @@ class UnitNormalizer {
     'kgs': 'kg',
     
     // Weight - milligrams
+    'mg': 'mg',
     'milligram': 'mg',
     'milligrams': 'mg',
     'mgs': 'mg',
     
     // Weight - ounces
+    'oz': 'oz',
     'ounce': 'oz',
     'ounces': 'oz',
     
     // Weight - pounds
+    'lb': 'lb',
     'pound': 'lb',
     'pounds': 'lb',
     'lbs': 'lb',
