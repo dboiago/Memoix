@@ -11,17 +11,13 @@ dependencies:
     sdk: flutter
   
   # UI & Design
-  cupertino_icons: ^1.0.6
   flutter_svg: ^2.0.9
-  cached_network_image: ^3.3.1
   
   # State Management
   flutter_riverpod: ^2.4.9
-  riverpod_annotation: ^2.3.3
   
   # Local Database
   drift: ^2.22.1
-  drift_flutter: ^0.2.4
   sqlite3_flutter_libs: ^0.5.27
   path_provider: ^2.1.2
   
@@ -81,7 +77,6 @@ dependencies:
 
   # PDF generation & sharing
   pdf: ^3.10.8
-  printing: ^5.13.1
 
   path: any
 dev_dependencies:
