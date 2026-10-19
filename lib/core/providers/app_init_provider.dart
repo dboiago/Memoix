@@ -97,13 +97,24 @@ final appInitProvider = FutureProvider<void>((ref) async {
     IngredientService().initialize(),
   ]);
 
+  // Riverpod 3.x pauses a StreamProvider that has no listener, so a bare
+  // ref.read(...future) never completes. Hold a listener until the first value.
+  Future<T> firstValue<T>(StreamProvider<T> provider) async {
+    final sub = ref.listen<AsyncValue<T>>(provider, (_, __) {});
+    try {
+      return await ref.read(provider.future);
+    } finally {
+      sub.close();
+    }
+  }
+
   // 4. Pre-warm the coursesProvider Riverpod StreamProvider so it is already
   //    in AsyncData state before HomeScreen builds. Because step 1 committed
   //    the Drift batch before any listener subscribed, the stream's first
   //    emission is the fully-seeded list (typically < 1 ms). When HomeScreen
   //    later calls ref.watch(coursesProvider) it finds AsyncData and renders
   //    the grid directly — never hitting its loading branch.
-  await ref.read(coursesProvider.future);
+  await firstValue(coursesProvider);
 
   // 5. Wait for SVG warm-up to finish (started in step 3).
   await warmUpFuture;
@@ -125,7 +136,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
   //        the 500+ UUID existence-check loop on this launch.
   //      • All domain providers are invalidated so step 8's pre-warm resolves
   //        with post-sync data, not the empty-list snapshot from before sync.
-  final initialRecipes = await ref.read(allRecipesProvider.future);
+  final initialRecipes = await firstValue(allRecipesProvider);
   if (initialRecipes.isEmpty) {
     await ref.read(localDataSeederProvider).seedDatabase();
 
@@ -145,7 +156,7 @@ final appInitProvider = FutureProvider<void>((ref) async {
     ref.invalidate(allModernistRecipesProvider);
     ref.invalidate(allCheeseEntriesProvider);
     ref.invalidate(allCellarEntriesProvider);
-    await ref.read(allRecipesProvider.future);
+    await firstValue(allRecipesProvider);
   }
 
   // 8. Pre-warm every per-course and per-domain provider that HomeScreen's
@@ -158,16 +169,16 @@ final appInitProvider = FutureProvider<void>((ref) async {
   await Future.wait(<Future<void>>[
     // Standard recipe courses — one per slug
     ...domainModels.Course.defaults.map(
-      (c) => ref.read(recipesByCourseProvider(c.slug).future).then((_) {}),
+      (c) => firstValue(recipesByCourseProvider(c.slug)).then((_) {}),
     ),
     // Specialized domain tables
-    ref.read(allPizzasProvider.future).then((_) {}),
-    ref.read(allSandwichesProvider.future).then((_) {}),
-    ref.read(allSmokingRecipesProvider.future).then((_) {}),
-    ref.read(allModernistRecipesProvider.future).then((_) {}),
-    ref.read(allCheeseEntriesProvider.future).then((_) {}),
-    ref.read(allCellarEntriesProvider.future).then((_) {}),
-    ref.read(recipeDraftsProvider.future).then((_) {}),
+    firstValue(allPizzasProvider).then((_) {}),
+    firstValue(allSandwichesProvider).then((_) {}),
+    firstValue(allSmokingRecipesProvider).then((_) {}),
+    firstValue(allModernistRecipesProvider).then((_) {}),
+    firstValue(allCheeseEntriesProvider).then((_) {}),
+    firstValue(allCellarEntriesProvider).then((_) {}),
+    firstValue(recipeDraftsProvider).then((_) {}),
   ]);
 });
 
