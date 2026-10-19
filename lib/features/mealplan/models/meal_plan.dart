@@ -168,18 +168,20 @@ class MealPlanService {
     String? cuisine,
     String? recipeCategory,
   }) async {
-    final plan = await getOrCreate(date);
-    await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
-      mealPlanId: plan.id,
-      instanceId: const Uuid().v4(),
-      recipeId: Value(recipeId),
-      recipeName: Value(recipeName),
-      course: Value(course),
-      servings: Value(servings),
-      notes: Value(notes),
-      cuisine: Value(cuisine),
-      recipeCategory: Value(recipeCategory),
-    ),);
+    await _db.transaction(() async {
+      final plan = await getOrCreate(date);
+      await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
+        mealPlanId: plan.id,
+        instanceId: const Uuid().v4(),
+        recipeId: Value(recipeId),
+        recipeName: Value(recipeName),
+        course: Value(course),
+        servings: Value(servings),
+        notes: Value(notes),
+        cuisine: Value(cuisine),
+        recipeCategory: Value(recipeCategory),
+      ),);
+    });
   }
 
   /// Remove a meal by unique Instance ID
@@ -193,35 +195,60 @@ class MealPlanService {
     DateTime toDate,
     String newCourse,
   ) async {
-    final meal = await _db.mealPlanDao.getMealByInstanceId(instanceId);
-    if (meal == null) return;
-    final toPlan = await _db.mealPlanDao.getOrCreatePlan(_formatDate(toDate));
-    await _db.mealPlanDao.removeMeal(instanceId);
-    await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
-      mealPlanId: toPlan.id,
-      instanceId: meal.instanceId,
-      recipeId: Value(meal.recipeId),
-      recipeName: Value(meal.recipeName),
-      course: Value(newCourse),
-      notes: Value(meal.notes),
-      servings: Value(meal.servings),
-      cuisine: Value(meal.cuisine),
-      recipeCategory: Value(meal.recipeCategory),
-    ),);
+    await _db.transaction(() async {
+      final meal = await _db.mealPlanDao.getMealByInstanceId(instanceId);
+      if (meal == null) return;
+      final toPlan = await _db.mealPlanDao.getOrCreatePlan(_formatDate(toDate));
+      await _db.mealPlanDao.removeMeal(instanceId);
+      await _db.mealPlanDao.addMeal(PlannedMealsCompanion.insert(
+        mealPlanId: toPlan.id,
+        instanceId: meal.instanceId,
+        recipeId: Value(meal.recipeId),
+        recipeName: Value(meal.recipeName),
+        course: Value(newCourse),
+        notes: Value(meal.notes),
+        servings: Value(meal.servings),
+        cuisine: Value(meal.cuisine),
+        recipeCategory: Value(meal.recipeCategory),
+      ),);
+    });
+  }
+
+  /// The Monday of [weekStart]'s week and the seven date keys from it.
+  ({DateTime monday, List<String> dates}) _weekDates(DateTime weekStart) {
+    final monday = weekStart.subtract(Duration(days: weekStart.weekday - 1));
+    final dates = List.generate(7, (i) => _formatDate(monday.add(Duration(days: i))));
+    return (monday: monday, dates: dates);
   }
 
   /// Get a week's worth of plans
   Future<WeeklyPlan> getWeek(DateTime weekStart) async {
-    final monday = weekStart.subtract(Duration(days: weekStart.weekday - 1));
-    final dates = List.generate(7, (i) => _formatDate(monday.add(Duration(days: i))));
-    final plansList = await _db.mealPlanDao.getWeekPlans(dates);
+    final week = _weekDates(weekStart);
+    final plansList = await _db.mealPlanDao.getWeekPlans(week.dates);
     final plans = <String, MealPlan>{};
     final mealsMap = <String, List<PlannedMeal>>{};
     for (final plan in plansList) {
       plans[plan.date] = plan;
       mealsMap[plan.date] = await _db.mealPlanDao.getMealsForPlan(plan.id);
     }
-    return WeeklyPlan(weekStart: monday, dailyPlans: plans, meals: mealsMap);
+    return WeeklyPlan(weekStart: week.monday, dailyPlans: plans, meals: mealsMap);
+  }
+
+  /// Watch a week's worth of plans; re-emits on any change to either table.
+  Stream<WeeklyPlan> watchWeek(DateTime weekStart) {
+    final week = _weekDates(weekStart);
+    return _db.mealPlanDao.watchPlansWithMeals(week.dates).map((rows) {
+      final plans = <String, MealPlan>{};
+      final mealsMap = <String, List<PlannedMeal>>{};
+      for (final row in rows) {
+        final date = row.plan.date;
+        plans[date] = row.plan;
+        final dayMeals = mealsMap.putIfAbsent(date, () => <PlannedMeal>[]);
+        final meal = row.meal;
+        if (meal != null) dayMeals.add(meal);
+      }
+      return WeeklyPlan(weekStart: week.monday, dailyPlans: plans, meals: mealsMap);
+    });
   }
 
   /// Watch plans for a date range
@@ -271,9 +298,9 @@ const List<String?> seatingChart = [
 
 // Use central provider from core/providers.dart
 
-final weeklyPlanProvider = FutureProvider.family<WeeklyPlan, DateTime>((ref, weekStart) async {
+final weeklyPlanProvider = StreamProvider.family<WeeklyPlan, DateTime>((ref, weekStart) {
   final service = ref.watch(mealPlanServiceProvider);
-  return service.getWeek(weekStart);
+  return service.watchWeek(weekStart);
 });
 
 final selectedWeekProvider = StateProvider<DateTime>((ref) {

@@ -4,6 +4,15 @@ import '../../../core/database/app_database.dart';
 
 part 'meal_plan_dao.g.dart';
 
+/// A meal plan row paired with one of its meals; [meal] is null for a plan
+/// that has no meals.
+class MealPlanWithMeal {
+  final MealPlan plan;
+  final PlannedMeal? meal;
+
+  const MealPlanWithMeal({required this.plan, required this.meal});
+}
+
 @DriftAccessor(tables: [MealPlans, PlannedMeals])
 class MealPlanDao extends DatabaseAccessor<AppDatabase>
     with _$MealPlanDaoMixin {
@@ -40,6 +49,33 @@ class MealPlanDao extends DatabaseAccessor<AppDatabase>
 
   Future<List<MealPlan>> getWeekPlans(List<String> dates) =>
       (select(mealPlans)..where((t) => t.date.isIn(dates))).get();
+
+  /// Watches the plans for [dates] joined to their meals, ordered by date and
+  /// then meal id. Re-emits on any write to either table.
+  Stream<List<MealPlanWithMeal>> watchPlansWithMeals(List<String> dates) {
+    final query = select(mealPlans).join([
+      leftOuterJoin(
+        plannedMeals,
+        plannedMeals.mealPlanId.equalsExp(mealPlans.id),
+      ),
+    ])
+      ..where(mealPlans.date.isIn(dates))
+      ..orderBy([
+        OrderingTerm.asc(mealPlans.date),
+        OrderingTerm.asc(plannedMeals.id),
+      ]);
+
+    return query.watch().map(
+          (rows) => rows
+              .map(
+                (row) => MealPlanWithMeal(
+                  plan: row.readTable(mealPlans),
+                  meal: row.readTableOrNull(plannedMeals),
+                ),
+              )
+              .toList(),
+        );
+  }
 
   // ─── PLANNED MEALS ────────────────────────────────────────────────────────
 

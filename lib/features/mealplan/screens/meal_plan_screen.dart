@@ -61,12 +61,16 @@ class _MealPlanScreenState extends ConsumerState<MealPlanScreen> {
   }
 
   DateTime _getWeekStart(DateTime date) {
-    return date.subtract(Duration(days: date.weekday - 1)).toMidnight();
+    return DateTime(date.year, date.month, date.day - (date.weekday - 1));
   }
 
   DateTime _getWeekForPage(int page) {
     final weeksFromStart = page - 1000;
-    return _currentWeekStart.add(Duration(days: weeksFromStart * 7));
+    return DateTime(
+      _currentWeekStart.year,
+      _currentWeekStart.month,
+      _currentWeekStart.day + weeksFromStart * 7,
+    );
   }
 
   /// Get the effective selected date (defaults to today if none selected)
@@ -257,7 +261,7 @@ class WeekView extends ConsumerWidget {
           padding: const EdgeInsets.all(8),
           itemCount: 7,
           itemBuilder: (context, dayIndex) {
-            final date = weekStart.add(Duration(days: dayIndex));
+            final date = DateTime(weekStart.year, weekStart.month, weekStart.day + dayIndex);
             final plan = weeklyPlan.planForDay(dayIndex);
             final dayMeals = weeklyPlan.mealsForDay(dayIndex);
             final isSelected = _isSameDay(date, selectedDate);
@@ -303,9 +307,6 @@ class _DayCardState extends ConsumerState<DayCard> {
   bool _hovered = false;
   static const _undoDuration = Duration(seconds: 4);
 
-  static DateTime _weekStartOf(DateTime date) =>
-      date.subtract(Duration(days: date.weekday - 1)).toMidnight();
-
   @override
   void deactivate() {
     // Reset hover state when navigating away
@@ -321,9 +322,6 @@ class _DayCardState extends ConsumerState<DayCard> {
       date: widget.date,
       instanceId: instanceId,
       undoDuration: _undoDuration,
-      onComplete: () {
-        if (mounted) ref.invalidate(weeklyPlanProvider(_weekStartOf(widget.date)));
-      },
     );
     
     // Trigger rebuild to show pending state
@@ -352,14 +350,6 @@ class _DayCardState extends ConsumerState<DayCard> {
       widget.date,
       targetCourse,
     );
-
-    // Force refresh of the UI (targeted to affected weeks only)
-    final sourceWeek = _weekStartOf(data.sourceDate);
-    final destWeek = _weekStartOf(widget.date);
-    ref.invalidate(weeklyPlanProvider(sourceWeek));
-    if (sourceWeek != destWeek) {
-      ref.invalidate(weeklyPlanProvider(destWeek));
-    }
 
     // Report meal plan move (fire-and-forget — must not block the UI)
     unawaited(() async {
@@ -803,9 +793,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
   final _searchController = TextEditingController();
   List<Recipe> _suggestions = [];
 
-  static DateTime _weekStartOf(DateTime date) =>
-      date.subtract(Duration(days: date.weekday - 1)).toMidnight();
-
   @override
   void initState() {
     super.initState();
@@ -876,14 +863,6 @@ class _AddMealSheetState extends ConsumerState<AddMealSheet> {
       MemoixSnackBar.show('Added ${recipe.name}');
     }
 
-    // Invalidate only the added meal's week, not the entire provider family
-    final addedWeekStart = _weekStartOf(_selectedDate);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) {
-        ref.invalidate(weeklyPlanProvider(addedWeekStart));
-      }
-    });
-    
     _searchController.clear();
     setState(() => _suggestions = []);
   }
