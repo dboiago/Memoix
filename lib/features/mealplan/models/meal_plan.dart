@@ -3,6 +3,7 @@ import 'dart:ui' show VoidCallback;
 import 'package:drift/drift.dart';
 import '../../../core/database/app_database.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/legacy.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/supabase_sync_service.dart';

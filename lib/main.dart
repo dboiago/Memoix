@@ -32,8 +32,10 @@ void main() async {
   }
 
   runApp(
-    const ProviderScope(
-      child: MemoixApp(),
+    ProviderScope(
+      // Keeps the previous no-retry behaviour of Riverpod 2.x.
+      retry: (retryCount, error) => null,
+      child: const MemoixApp(),
     ),
   );
 }

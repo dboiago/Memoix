@@ -21,7 +21,7 @@ class StorageProviderManager {
   /// Use this when activating Shared Storage - it disconnects Personal Storage
   /// but leaves the Shared Storage provider connected.
   /// 
-  /// [ref] - WidgetRef or ProviderRef to access providers
+  /// [ref] - WidgetRef or Ref to access providers
   /// [exceptProvider] - Provider to keep connected (optional)
   static Future<void> disconnectAllExcept(WidgetRef ref, {StorageProvider? exceptProvider}) async {
     final prefs = await SharedPreferences.getInstance();
@@ -62,7 +62,7 @@ class StorageProviderManager {
   /// 
   /// Use this when connecting to Personal Storage - ensures nothing else is active
   /// 
-  /// [ref] - WidgetRef or ProviderRef to access providers
+  /// [ref] - WidgetRef or Ref to access providers
   static Future<void> disconnectAll(WidgetRef ref) async {
     await disconnectAllExcept(ref, exceptProvider: null);
   }
@@ -70,7 +70,7 @@ class StorageProviderManager {
   /// Disconnect a specific provider by ID
   /// 
   /// [providerId] - Provider identifier ('google_drive', 'onedrive', etc.)
-  /// [ref] - WidgetRef or ProviderRef to access providers
+  /// [ref] - WidgetRef or Ref to access providers
   static Future<void> _disconnectProvider(String providerId, WidgetRef ref) async {
     switch (providerId) {
       case 'google_drive':

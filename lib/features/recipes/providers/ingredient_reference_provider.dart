@@ -3,6 +3,7 @@
 /// Survives navigation — scoped to the app root, NOT to a detail screen.
 /// Session lifetime only — no database or SharedPreferences persistence.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/legacy.dart';
 
 import '../services/ingredient_reference_service.dart';
 
