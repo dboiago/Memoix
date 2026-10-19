@@ -7,7 +7,6 @@ import 'package:flutter_riverpod/legacy.dart';
 import 'package:uuid/uuid.dart';
 import '../../../core/providers.dart';
 import '../../../core/services/supabase_sync_service.dart';
-import '../../../core/utils/date_time_utils.dart';
 
 /// Helper class for pending delete data
 class _PendingDelete {
@@ -306,5 +305,5 @@ final weeklyPlanProvider = StreamProvider.family<WeeklyPlan, DateTime>((ref, wee
 final selectedWeekProvider = StateProvider<DateTime>((ref) {
   final now = DateTime.now();
   // Start of current week (Monday)
-  return now.subtract(Duration(days: now.weekday - 1)).toMidnight();
+  return DateTime(now.year, now.month, now.day - (now.weekday - 1));
 });

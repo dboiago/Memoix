@@ -16,7 +16,6 @@ import '../../recipes/repository/recipe_repository.dart';
 import '../../recipes/models/cuisine.dart';
 import '../../recipes/models/recipe.dart';
 import '../../shopping/screens/shopping_list_screen.dart';
-import '../../../core/utils/date_time_utils.dart';
 
 /// Data passed during drag operation
 class _DraggableMealData {
@@ -241,7 +240,7 @@ class WeekView extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // Use FutureProvider which loads immediately
+    // Stream provider: re-emits on every database change to this week.
     final weekPlanAsync = ref.watch(weeklyPlanProvider(weekStart));
 
     return weekPlanAsync.when(
