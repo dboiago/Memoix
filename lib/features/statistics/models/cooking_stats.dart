@@ -309,13 +309,13 @@ final totalFavouriteCountProvider = Provider<AsyncValue<int>>((ref) {
     return AsyncValue.error(errored.first.error!, errored.first.stackTrace!);
   }
 
-  final count = (recipes.valueOrNull?.length ?? 0) +
-      (cheese.valueOrNull?.length ?? 0) +
-      (cellar.valueOrNull?.length ?? 0) +
-      (pizzas.valueOrNull?.length ?? 0) +
-      (sandwiches.valueOrNull?.length ?? 0) +
-      (modernist.valueOrNull?.length ?? 0) +
-      (smoking.valueOrNull?.length ?? 0);
+  final count = (recipes.value?.length ?? 0) +
+      (cheese.value?.length ?? 0) +
+      (cellar.value?.length ?? 0) +
+      (pizzas.value?.length ?? 0) +
+      (sandwiches.value?.length ?? 0) +
+      (modernist.value?.length ?? 0) +
+      (smoking.value?.length ?? 0);
 
   return AsyncValue.data(count);
 });

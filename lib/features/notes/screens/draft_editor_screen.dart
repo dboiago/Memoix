@@ -593,7 +593,7 @@ class _DraftEditorScreenState extends ConsumerState<DraftEditorScreen> {
 
   // --- Pairs With UI ---
   Widget _buildPairsWithSection(ThemeData theme, AsyncValue<List<Recipe>> allRecipesAsync) {
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    final allRecipes = allRecipesAsync.value ?? [];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

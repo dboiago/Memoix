@@ -477,10 +477,10 @@ class _OmnibarScreenState extends ConsumerState<OmnibarScreen> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final memoixAvailable = ref.watch(memoixAvailableProvider);
-    final isOnline = ref.watch(connectivityProvider).valueOrNull ?? true;
+    final isOnline = ref.watch(connectivityProvider).value ?? true;
 
     ref.listen<AsyncValue<bool>>(connectivityProvider, (_, next) {
-      if (next.valueOrNull == false && _collectionModeNotifier.value) {
+      if (next.value == false && _collectionModeNotifier.value) {
         _collectionModeNotifier.value = false;
       }
     });
@@ -670,13 +670,13 @@ class _OmniResultsViewState extends ConsumerState<_OmniResultsView> {
       return const Center(child: CircularProgressIndicator());
     }
 
-    final recipes = recipesAsync.valueOrNull ?? [];
-    final pizzas = pizzasAsync.valueOrNull ?? [];
-    final sandwiches = sandwichesAsync.valueOrNull ?? [];
-    final smokingAll = smokingAsync.valueOrNull ?? [];
-    final modernists = modernistAsync.valueOrNull ?? [];
-    final cheeseEntries = cheeseAsync.valueOrNull ?? [];
-    final cellarEntries = cellarAsync.valueOrNull ?? [];
+    final recipes = recipesAsync.value ?? [];
+    final pizzas = pizzasAsync.value ?? [];
+    final sandwiches = sandwichesAsync.value ?? [];
+    final smokingAll = smokingAsync.value ?? [];
+    final modernists = modernistAsync.value ?? [];
+    final cheeseEntries = cheeseAsync.value ?? [];
+    final cellarEntries = cellarAsync.value ?? [];
 
     final eligible = <_OmniCandidate>[];
     final memoixEligible = <_OmniCandidate>[];

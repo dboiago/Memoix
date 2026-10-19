@@ -2760,7 +2760,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
             children: _pairedRecipeIds.map((uuid) {
               // Get recipe info for display
               final allRecipesAsync = ref.watch(allRecipesProvider);
-              final allRecipes = allRecipesAsync.valueOrNull ?? [];
+              final allRecipes = allRecipesAsync.value ?? [];
               final recipe = allRecipes.where((r) => r.uuid == uuid).firstOrNull;
               final name = recipe?.name ?? 'Unknown';
               final course = recipe?.course ?? 'mains';
@@ -2803,7 +2803,7 @@ class _RecipeEditScreenState extends ConsumerState<RecipeEditScreen> {
   /// Show a dialog to select a recipe to pair with
   void _showRecipeSelector() {
     final allRecipesAsync = ref.read(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    final allRecipes = allRecipesAsync.value ?? [];
     
     // Filter out: current recipe, already paired, and recipes from excluded courses
     final availableRecipes = allRecipes.where((r) {

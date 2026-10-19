@@ -1860,7 +1860,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
             runSpacing: 8,
             children: _pairedRecipeIds.map((uuid) {
               final allRecipesAsync = ref.watch(allRecipesProvider);
-              final allRecipes = allRecipesAsync.valueOrNull ?? [];
+              final allRecipes = allRecipesAsync.value ?? [];
               final recipe =
                   allRecipes.where((r) => r.uuid == uuid).firstOrNull;
               final name = recipe?.name ?? 'Unknown';
@@ -1896,7 +1896,7 @@ class _ClassicsEntryScreenState extends ConsumerState<ClassicsEntryScreen> {
 
   void _showRecipeSelector() {
     final allRecipesAsync = ref.read(allRecipesProvider);
-    final allRecipes = allRecipesAsync.valueOrNull ?? [];
+    final allRecipes = allRecipesAsync.value ?? [];
     final available = allRecipes
         .where((r) =>
             !_pairedRecipeIds.contains(r.uuid) && r.supportsPairing,)

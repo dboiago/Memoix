@@ -1161,7 +1161,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     // Select only the (uuid, pairedRecipeIds) pairs needed for pairing logic.
     final pairs = ref.watch(
       allRecipesProvider.select(
-        (v) => (v.valueOrNull ?? []).map((r) => (uuid: r.uuid, pairedIds: r.pairedRecipeIds)).toList(),
+        (v) => (v.value ?? []).map((r) => (uuid: r.uuid, pairedIds: r.pairedRecipeIds)).toList(),
       ),
     );
 
@@ -1191,7 +1191,7 @@ class _RecipeDetailViewState extends ConsumerState<RecipeDetailView> {
     // pairing data changes, not when unrelated fields like cookCount change.
     final pairs = ref.watch(
       allRecipesProvider.select(
-        (v) => (v.valueOrNull ?? [])
+        (v) => (v.value ?? [])
             .map((r) => (uuid: r.uuid, name: r.name, course: r.course, pairedIds: r.pairedRecipeIds))
             .toList(),
       ),

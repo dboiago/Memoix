@@ -1102,7 +1102,7 @@ class _MealCourseNutritionChip extends ConsumerWidget {
     // Select only nutrition primitives for this course's meals.
     final nutritionData = ref.watch(
       allRecipesProvider.select(
-        (v) => (v.valueOrNull ?? [])
+        (v) => (v.value ?? [])
             .where((r) => recipeIdSet.contains(r.uuid))
             .map((r) => (
               calories: r.nutrition?.calories,
@@ -1168,7 +1168,7 @@ class _NutritionSummaryChip extends ConsumerWidget {
     // Select only nutrition primitives for the listed recipe IDs.
     final nutritionData = ref.watch(
       allRecipesProvider.select(
-        (v) => (v.valueOrNull ?? [])
+        (v) => (v.value ?? [])
             .where((r) => recipeIdSet.contains(r.uuid))
             .map((r) => (
               calories: r.nutrition?.calories,

@@ -127,7 +127,7 @@ class _ShoppingListCardState extends ConsumerState<ShoppingListCard> {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final itemsAsync = ref.watch(shoppingItemsProvider(widget.list.id));
-    final items = itemsAsync.valueOrNull ?? const [];
+    final items = itemsAsync.value ?? const [];
     final itemCount = items.length;
     final checkedCount = items.where((i) => i.isChecked).length;
     final progress = itemCount == 0 ? 0.0 : checkedCount / itemCount;
@@ -1318,7 +1318,7 @@ class _ShoppingListNutritionChip extends ConsumerWidget {
     // Select only nutrition primitives for the shopping list's recipe IDs.
     final nutritionData = ref.watch(
       allRecipesProvider.select(
-        (v) => (v.valueOrNull ?? [])
+        (v) => (v.value ?? [])
             .where((r) => recipeIdSet.contains(r.uuid))
             .map((r) => (
               calories: r.nutrition?.calories,

@@ -146,7 +146,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     final items = <FavouriteItem>[];
 
     // Add recipes
-    final recipes = recipesAsync.valueOrNull ?? [];
+    final recipes = recipesAsync.value ?? [];
     for (final recipe in recipes) {
       items.add(FavouriteItem(
         item: recipe,
@@ -158,7 +158,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add cheese entries
-    final cheeses = cheeseAsync.valueOrNull ?? [];
+    final cheeses = cheeseAsync.value ?? [];
     for (final cheese in cheeses) {
       items.add(FavouriteItem(
         item: cheese,
@@ -169,7 +169,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add cellar entries
-    final cellars = cellarAsync.valueOrNull ?? [];
+    final cellars = cellarAsync.value ?? [];
     for (final cellar in cellars) {
       items.add(FavouriteItem(
         item: cellar,
@@ -180,7 +180,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add pizzas
-    final pizzas = pizzasAsync.valueOrNull ?? [];
+    final pizzas = pizzasAsync.value ?? [];
     for (final pizza in pizzas) {
       items.add(FavouriteItem(
         item: pizza,
@@ -192,7 +192,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add sandwiches
-    final sandwiches = sandwichesAsync.valueOrNull ?? [];
+    final sandwiches = sandwichesAsync.value ?? [];
     for (final sandwich in sandwiches) {
       items.add(FavouriteItem(
         item: sandwich,
@@ -204,7 +204,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add modernist recipes
-    final modernists = modernistAsync.valueOrNull ?? [];
+    final modernists = modernistAsync.value ?? [];
     for (final modernist in modernists) {
       items.add(FavouriteItem(
         item: modernist,
@@ -216,7 +216,7 @@ class _FavouritesScreenState extends ConsumerState<FavouritesScreen> {
     }
 
     // Add smoking recipes
-    final smokings = smokingAsync.valueOrNull ?? [];
+    final smokings = smokingAsync.value ?? [];
     for (final smoking in smokings) {
       items.add(FavouriteItem(
         item: smoking,
