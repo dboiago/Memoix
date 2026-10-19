@@ -278,9 +278,12 @@ abstract class SupabaseSyncService {
   /// single-uuid interface — the call is a documented no-op. Preference rows
   /// are implicitly invalidated when the parent entity row is soft-deleted.
   ///
-  /// Child tables (`'ingredients'`, `'planned_meals'`, `'shopping_items'`,
-  /// `'recipe_images'`) cascade automatically in Supabase when the parent is
-  /// soft-deleted; callers should **not** call this method for child rows.
+  /// Child tables (`'ingredients'`, `'shopping_items'`, `'recipe_images'`)
+  /// cascade automatically in Supabase when the parent is soft-deleted;
+  /// callers should **not** call this method for child rows.
+  ///
+  /// `'planned_meals'` is the exception: a single meal can be deleted while
+  /// its plan lives on, so pass its `instance_id` as [uuid].
   ///
   /// Never throws — all errors are caught and logged.
   static Future<void> notifyDeleted(String entityType, String uuid) async {
@@ -299,15 +302,19 @@ abstract class SupabaseSyncService {
       final now = DateTime.now().toUtc().toIso8601String();
 
       // Tables whose remote schema has no updated_at column.
-      const _noUpdatedAt = {'meal_plans', 'shopping_lists', 'cooking_logs'};
+      const _noUpdatedAt = {
+        'meal_plans',
+        'planned_meals',
+        'shopping_lists',
+        'cooking_logs',
+      };
 
       final Map<String, dynamic> updateData = {'deleted_at': now};
       if (!_noUpdatedAt.contains(entityType)) {
         updateData['updated_at'] = now;
       }
 
-      // courses uses slug as its sync key; all other tables use uuid.
-      final String keyColumn = entityType == 'courses' ? 'slug' : 'uuid';
+      final String keyColumn = _deletionKeyColumn(entityType);
 
       await client
           .schema('memoix')
@@ -322,6 +329,18 @@ abstract class SupabaseSyncService {
   // ─────────────────────────────────────────────────────────────────────────
   // Offline deletion queue
   // ─────────────────────────────────────────────────────────────────────────
+
+  /// Remote column that identifies a row of [entityType] for soft-deletes.
+  static String _deletionKeyColumn(String entityType) {
+    switch (entityType) {
+      case 'courses':
+        return 'slug';
+      case 'planned_meals':
+        return 'instance_id';
+      default:
+        return 'uuid';
+    }
+  }
 
   /// Persists a soft-delete intent to the local [PendingDeletions] queue so
   /// that the Supabase notification survives an app restart or offline period.
@@ -364,7 +383,12 @@ abstract class SupabaseSyncService {
       final rows = await db.select(db.pendingDeletions).get();
       if (rows.isEmpty) return;
 
-      const _noUpdatedAt = {'meal_plans', 'shopping_lists', 'cooking_logs'};
+      const _noUpdatedAt = {
+        'meal_plans',
+        'planned_meals',
+        'shopping_lists',
+        'cooking_logs',
+      };
 
       for (final row in rows) {
         try {
@@ -373,8 +397,7 @@ abstract class SupabaseSyncService {
           if (!_noUpdatedAt.contains(row.entityType)) {
             updateData['updated_at'] = now;
           }
-          final String keyColumn =
-              row.entityType == 'courses' ? 'slug' : 'uuid';
+          final String keyColumn = _deletionKeyColumn(row.entityType);
           await client
               .schema('memoix')
               .from(row.entityType)

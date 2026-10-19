@@ -184,8 +184,11 @@ class MealPlanService {
   }
 
   /// Remove a meal by unique Instance ID
-  Future<void> removeMeal(DateTime date, String instanceId) =>
-      _db.mealPlanDao.removeMeal(instanceId);
+  Future<void> removeMeal(DateTime date, String instanceId) async {
+    await SupabaseSyncService.queueDeletion('planned_meals', instanceId);
+    await _db.mealPlanDao.removeMeal(instanceId);
+    unawaited(SupabaseSyncService.notifyDeleted('planned_meals', instanceId));
+  }
 
   /// Move a meal from one date to another
   Future<void> moveMeal(
