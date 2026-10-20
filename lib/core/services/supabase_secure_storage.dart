@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -16,12 +17,22 @@ class SupabaseSecureStorage extends LocalStorage {
 
   @override
   Future<bool> hasAccessToken() async {
-    return await _storage.containsKey(key: _sessionKey);
+    try {
+      return await _storage.containsKey(key: _sessionKey);
+    } catch (e) {
+      debugPrint('SupabaseSecureStorage: could not check _sessionKey (${e.runtimeType})');
+      return false;
+    }
   }
 
   @override
   Future<String?> accessToken() async {
-    return await _storage.read(key: _sessionKey);
+    try {
+      return await _storage.read(key: _sessionKey);
+    } catch (e) {
+      debugPrint('SupabaseSecureStorage: could not read _sessionKey (${e.runtimeType})');
+      return null;
+    }
   }
 
   @override

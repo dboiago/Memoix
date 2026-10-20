@@ -171,16 +171,36 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   @override
   Future<void> init() async {
     // Restore previous session from secure storage
-    _accessToken = await _secureStorage.read(key: _keyAccessToken);
-    _refreshToken = await _secureStorage.read(key: _keyRefreshToken);
-    _activeFolderId = await _secureStorage.read(key: _keyFolderId);
-    _activeFolderName = await _secureStorage.read(key: _keyFolderName);
-    _targetDriveId = await _secureStorage.read(key: _keyDriveId);
-    _targetFolderId = await _secureStorage.read(key: _keyTargetFolderId);
+    try {
+      final accessToken = await _secureStorage.read(key: _keyAccessToken);
+      final refreshToken = await _secureStorage.read(key: _keyRefreshToken);
+      final folderId = await _secureStorage.read(key: _keyFolderId);
+      final folderName = await _secureStorage.read(key: _keyFolderName);
+      final driveId = await _secureStorage.read(key: _keyDriveId);
+      final targetFolderId = await _secureStorage.read(key: _keyTargetFolderId);
+      final expiryStr = await _secureStorage.read(key: _keyTokenExpiry);
 
-    final expiryStr = await _secureStorage.read(key: _keyTokenExpiry);
-    if (expiryStr != null) {
-      _tokenExpiry = DateTime.tryParse(expiryStr);
+      _accessToken = accessToken;
+      _refreshToken = refreshToken;
+      _activeFolderId = folderId;
+      _activeFolderName = folderName;
+      _targetDriveId = driveId;
+      _targetFolderId = targetFolderId;
+      if (expiryStr != null) {
+        _tokenExpiry = DateTime.tryParse(expiryStr);
+      }
+    } catch (e) {
+      // In-memory only: stored values are left untouched so a later read can succeed.
+      debugPrint('OneDriveStorage: Secure storage read failed, not connected (${e.runtimeType})');
+      _accessToken = null;
+      _refreshToken = null;
+      _tokenExpiry = null;
+      _activeFolderId = null;
+      _activeFolderName = null;
+      _targetDriveId = null;
+      _targetFolderId = null;
+      _isConnected = false;
+      return;
     }
 
     // Check if token is still valid

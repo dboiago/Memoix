@@ -35,6 +35,7 @@ import '../../cheese/repository/cheese_repository.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../../ai/services/ai_key_storage.dart';
+import '../../personal_storage/providers/one_drive_storage.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../app/routes/router.dart';
 
@@ -943,9 +944,10 @@ class SettingsScreen extends ConsumerWidget {
                 if (await dir.exists()) await dir.delete(recursive: true);
               }
 
-              // Clear AI provider API keys and Supabase auth session from secure storage
+              // Clear AI provider API keys, Supabase auth session and OneDrive credentials from secure storage
               await AiKeyStorage.clearAll();
               await const SupabaseSecureStorage().removePersistedSession();
+              await OneDriveStorage().signOut();
 
               // Clear cloud and sync SharedPreferences keys
               final prefs = await SharedPreferences.getInstance();

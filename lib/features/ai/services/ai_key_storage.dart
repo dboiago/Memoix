@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 import '../../import/ai/ai_provider.dart';
@@ -25,9 +26,14 @@ class AiKeyStorage {
     await _storage.write(key: _key(provider), value: token);
   }
 
-  /// Read the API key for [provider]. Returns `null` when not set.
+  /// Read the API key for [provider]. Returns `null` when not set or unreadable.
   static Future<String?> getToken(AiProvider provider) async {
-    return _storage.read(key: _key(provider));
+    try {
+      return await _storage.read(key: _key(provider));
+    } catch (e) {
+      debugPrint('AiKeyStorage: could not read stored key for ${provider.name} (${e.runtimeType})');
+      return null;
+    }
   }
 
   /// Remove the stored API key for [provider].
@@ -35,9 +41,9 @@ class AiKeyStorage {
     await _storage.delete(key: _key(provider));
   }
 
-  /// Whether a key is stored for [provider].
+  /// Whether a readable key is stored for [provider].
   static Future<bool> hasToken(AiProvider provider) async {
-    final value = await _storage.read(key: _key(provider));
+    final value = await getToken(provider);
     return value != null && value.isNotEmpty;
   }
 
