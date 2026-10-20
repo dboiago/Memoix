@@ -4,6 +4,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:googleapis_auth/auth_io.dart' as auth_io;
@@ -30,6 +31,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   static const _keyAccessToken = 'google_drive_access_token';
   static const _keyRefreshToken = 'google_drive_refresh_token';
   static const _keyTokenExpiry = 'google_drive_token_expiry';
+  static const _tokenKeys = [_keyAccessToken, _keyRefreshToken, _keyTokenExpiry];
 
   // File names in the Memoix folder
   static const _recipesFileName = 'memoix_recipes.json';
@@ -52,6 +54,9 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   /// Google Sign-In instance for mobile platforms
   final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: _scopes);
+
+  /// Secure storage for the desktop OAuth tokens
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
   /// Drive API client (initialized after sign-in)
   drive.DriveApi? _driveApi;
@@ -172,7 +177,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
         unawaited(checkPendingRepositories());
       }
     } catch (e) {
-      debugPrint('GoogleDriveStorage: Silent sign-in failed: $e');
+      debugPrint('GoogleDriveStorage: Silent sign-in failed (${e.runtimeType})');
       await _clearStoredState();
     }
   }
@@ -197,7 +202,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
       return connected;
     } catch (e) {
-      debugPrint('GoogleDriveStorage: Connection failed: $e');
+      debugPrint('GoogleDriveStorage: Connection failed (${e.runtimeType})');
       await _clearStoredState();
       rethrow;
     }
@@ -648,9 +653,30 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   /// Restore desktop session from stored tokens
   Future<void> _restoreDesktopSession(SharedPreferences prefs) async {
-    final accessToken = prefs.getString(_keyAccessToken);
-    final refreshToken = prefs.getString(_keyRefreshToken);
-    final expiryMillis = prefs.getInt(_keyTokenExpiry);
+    var accessToken = await _readSecureToken(_keyAccessToken);
+    var refreshToken = await _readSecureToken(_keyRefreshToken);
+    var expiryMillis = int.tryParse(await _readSecureToken(_keyTokenExpiry) ?? '');
+
+    if (accessToken == null || refreshToken == null || expiryMillis == null) {
+      // Earlier versions kept the tokens in SharedPreferences.
+      final legacyAccess = prefs.getString(_keyAccessToken);
+      final legacyRefresh = prefs.getString(_keyRefreshToken);
+      final legacyExpiry = prefs.getInt(_keyTokenExpiry);
+      if (legacyAccess != null && legacyRefresh != null && legacyExpiry != null) {
+        accessToken = legacyAccess;
+        refreshToken = legacyRefresh;
+        expiryMillis = legacyExpiry;
+        try {
+          await _writeSecureTokens(legacyAccess, legacyRefresh, legacyExpiry);
+          for (final key in _tokenKeys) {
+            await prefs.remove(key);
+          }
+        } catch (e) {
+          // Legacy values stay in place and are used for this run.
+          debugPrint('GoogleDriveStorage: Token migration incomplete (${e.runtimeType})');
+        }
+      }
+    }
 
     if (accessToken == null || refreshToken == null || expiryMillis == null) {
       await _clearStoredState();
@@ -675,7 +701,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
         _desktopCredentials = refreshedCredentials;
         await _saveDesktopCredentials(refreshedCredentials);
       } catch (e) {
-        debugPrint('GoogleDriveStorage: Token refresh failed: $e');
+        debugPrint('GoogleDriveStorage: Token refresh failed (${e.runtimeType})');
         await _clearStoredState();
         return;
       }
@@ -692,17 +718,36 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     _driveApi = drive.DriveApi(client);
   }
 
-  /// Save desktop credentials to SharedPreferences
-  Future<void> _saveDesktopCredentials(auth_io.AccessCredentials creds) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_keyAccessToken, creds.accessToken.data);
-    if (creds.refreshToken != null) {
-      await prefs.setString(_keyRefreshToken, creds.refreshToken!);
-    }
-    await prefs.setInt(
-      _keyTokenExpiry,
+  /// Save desktop credentials to secure storage
+  Future<void> _saveDesktopCredentials(auth_io.AccessCredentials creds) {
+    return _writeSecureTokens(
+      creds.accessToken.data,
+      creds.refreshToken,
       creds.accessToken.expiry.millisecondsSinceEpoch,
     );
+  }
+
+  /// Read a desktop token from secure storage; an unreadable value is treated as absent.
+  Future<String?> _readSecureToken(String key) async {
+    try {
+      return await _secureStorage.read(key: key);
+    } catch (e) {
+      debugPrint('GoogleDriveStorage: Secure storage read failed for $key (${e.runtimeType})');
+      return null;
+    }
+  }
+
+  /// Write the desktop tokens to secure storage. Failures are surfaced.
+  Future<void> _writeSecureTokens(
+    String accessToken,
+    String? refreshToken,
+    int expiryMillis,
+  ) async {
+    await _secureStorage.write(key: _keyAccessToken, value: accessToken);
+    if (refreshToken != null) {
+      await _secureStorage.write(key: _keyRefreshToken, value: refreshToken);
+    }
+    await _secureStorage.write(key: _keyTokenExpiry, value: expiryMillis.toString());
   }
 
   /// Initialize Drive API from mobile sign-in
@@ -1089,9 +1134,14 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     await prefs.remove(_keyIsConnected);
     await prefs.remove(_keyFolderId);
     await prefs.remove(_keyFolderPath);
-    await prefs.remove(_keyAccessToken);
-    await prefs.remove(_keyRefreshToken);
-    await prefs.remove(_keyTokenExpiry);
+
+    // Legacy SharedPreferences copies are removed too, so unmigrated users are cleaned.
+    for (final key in _tokenKeys) {
+      await prefs.remove(key);
+    }
+    for (final key in _tokenKeys) {
+      await _secureStorage.delete(key: key);
+    }
   }
 }
 

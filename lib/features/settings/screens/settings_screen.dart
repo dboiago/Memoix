@@ -35,6 +35,7 @@ import '../../cheese/repository/cheese_repository.dart';
 import '../../cellar/repository/cellar_repository.dart';
 import '../../ai/ai_settings_provider.dart';
 import '../../ai/services/ai_key_storage.dart';
+import '../../personal_storage/providers/google_drive_storage.dart';
 import '../../personal_storage/providers/one_drive_storage.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../app/routes/router.dart';
@@ -944,10 +945,11 @@ class SettingsScreen extends ConsumerWidget {
                 if (await dir.exists()) await dir.delete(recursive: true);
               }
 
-              // Clear AI provider API keys, Supabase auth session and OneDrive credentials from secure storage
+              // Clear AI provider API keys, Supabase auth session, and OneDrive and Google Drive credentials
               await AiKeyStorage.clearAll();
               await const SupabaseSecureStorage().removePersistedSession();
               await OneDriveStorage().signOut();
+              await ref.read(googleDriveStorageProvider).disconnect();
 
               // Clear cloud and sync SharedPreferences keys
               final prefs = await SharedPreferences.getInstance();
@@ -958,9 +960,6 @@ class SettingsScreen extends ConsumerWidget {
                 'google_drive_connected',
                 'google_drive_folder_id',
                 'google_drive_folder_path',
-                'google_drive_access_token',
-                'google_drive_refresh_token',
-                'google_drive_token_expiry',
                 'supabase_sync_recipes',
                 'supabase_sync_ingredients',
                 'supabase_sync_pizzas',
