@@ -95,3 +95,6 @@ coverage/
 
 # Specific Files
 assets/integrity_content.bin
+
+# Supabase CLI local state
+supabase/.temp/

@@ -77,7 +77,12 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
     } else {
       // No active provider — initialize Google Drive for a potential new connection
       _googleDrive = GoogleDriveStorage();
-      await _googleDrive!.initialize();
+      try {
+        await _googleDrive!.initialize();
+      } catch (e) {
+        // The instance stays disconnected; the user can reconnect manually.
+        debugPrint('PersonalStorageScreen: Google Drive initialize failed (${e.runtimeType})');
+      }
     }
 
     // Check if Personal Storage is configured (has preferences)

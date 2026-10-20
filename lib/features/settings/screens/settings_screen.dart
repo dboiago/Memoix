@@ -37,6 +37,7 @@ import '../../ai/ai_settings_provider.dart';
 import '../../ai/services/ai_key_storage.dart';
 import '../../personal_storage/providers/google_drive_storage.dart';
 import '../../personal_storage/providers/one_drive_storage.dart';
+import '../../personal_storage/services/personal_storage_service.dart';
 import '../../statistics/models/cooking_stats.dart';
 import '../../../app/routes/router.dart';
 
@@ -950,6 +951,8 @@ class SettingsScreen extends ConsumerWidget {
               await const SupabaseSecureStorage().removePersistedSession();
               await OneDriveStorage().signOut();
               await ref.read(googleDriveStorageProvider).disconnect();
+              // Drops any provider the service still holds so nothing keeps tokens or syncing.
+              await ref.read(personalStorageServiceProvider).disconnect();
 
               // Clear cloud and sync SharedPreferences keys
               final prefs = await SharedPreferences.getInstance();

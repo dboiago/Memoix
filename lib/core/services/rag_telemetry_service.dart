@@ -8,6 +8,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
+import '../../config/app_config.dart';
 import '../database/app_database.dart' hide Recipe;
 import '../models/cellar_knowledge_payload.dart';
 import '../models/cheese_knowledge_payload.dart';
@@ -44,7 +45,8 @@ typedef PairedRecipeResolver = Future<List<({String name, String course})>>
 /// **Privacy guarantees enforced here:**
 /// 1. The individual [Recipe.isShared] flag must be true.
 /// 2. The master 'Contribute to Culinary Intelligence' switch must be ON.
-/// If either condition fails, the method returns immediately with no side effects.
+/// 3. The hash pepper must be configured.
+/// If any condition fails, the method returns immediately with no side effects.
 ///
 /// **Circular-import note:** [recipe_repository.dart] imports this file, so
 /// this file must never import [recipe_repository.dart]. All DB access uses
@@ -82,9 +84,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -121,9 +123,9 @@ class RagTelemetryService {
     ModernistRecipe recipe, [
     String? rawSource,
   ]) async {
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: modernist skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: modernist skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -163,9 +165,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: smoking skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: smoking skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -204,9 +206,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: pizza skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: pizza skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -244,9 +246,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: sandwich skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: sandwich skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -288,9 +290,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: cellar skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: cellar skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -332,9 +334,9 @@ class RagTelemetryService {
       return;
     }
 
-    if (!await _masterSwitchEnabled()) {
+    if (!await _telemetryAvailable()) {
       debugPrint(
-        'RagTelemetryService: cheese skipped — master Culinary Intelligence switch is OFF.',
+        'RagTelemetryService: cheese skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
       );
       return;
     }
@@ -385,6 +387,11 @@ class RagTelemetryService {
     required Future<List<CellarEntry>> Function() cellarFetcher,
     required Future<List<CheeseEntry>> Function() cheeseFetcher,
   }) async {
+    if (!_pepperConfigured) {
+      debugPrint('RagTelemetryService.backfillOnOptIn: skipped — hash pepper missing.');
+      return;
+    }
+
     const batchSize = 25;
     // Metadata is identical for every payload in a single backfill run.
     final metadata = await _buildMetadata();
@@ -623,13 +630,23 @@ class RagTelemetryService {
     return _ref.read(contributeToIntelligenceProvider);
   }
 
+  /// Hashes are meaningless without the pepper, so telemetry stays off without it.
+  bool get _pepperConfigured => AppConfig.recipeHashPepper.isNotEmpty;
+
+  Future<bool> _telemetryAvailable() async {
+    if (!_pepperConfigured) return false;
+    return _masterSwitchEnabled();
+  }
+
   /// Returns the existing [lineageHash] unchanged if set, otherwise computes
   /// a fresh one via [compute] and persists it to the DB for [persistForId].
+  /// Without a configured pepper it returns an empty string and stores nothing.
   Future<String> _resolveLineageHash({
     required String? existing,
     required String Function() compute,
     required int persistForId,
   }) async {
+    if (!_pepperConfigured) return '';
     if (existing != null && existing.isNotEmpty) return existing;
     final hash = compute();
     if (persistForId > 0) {
