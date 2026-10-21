@@ -888,13 +888,22 @@ class _PersonalStorageScreenState extends ConsumerState<PersonalStorageScreen> {
 
     if (confirmed == true) {
       final service = ref.read(personalStorageServiceProvider);
-      await service.disconnect();
+      var failed = false;
+      try {
+        await service.disconnect();
+      } catch (e) {
+        failed = true;
+        debugPrint('PersonalStorageScreen: Disconnect failed (${e.runtimeType})');
+        MemoixSnackBar.showError('Could not fully disconnect from $providerName');
+      }
+      // Keep showing the connection while the service still holds one.
+      if (failed && service.isConnected) return;
       _googleDrive = null;
       _oneDrive = null;
       _isPersonalStorageConfigured = false;
       _lastSyncTime = null;
       if (mounted) setState(() {});
-      MemoixSnackBar.show('Disconnected from $providerName');
+      if (!failed) MemoixSnackBar.show('Disconnected from $providerName');
     }
   }
 

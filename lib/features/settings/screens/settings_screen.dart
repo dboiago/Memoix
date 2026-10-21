@@ -929,58 +929,74 @@ class SettingsScreen extends ConsumerWidget {
           TextButton(
             onPressed: () async {
               Navigator.pop(ctx);
-              await MemoixDatabase.clearAll();
+              var allCleared = true;
+
+              // A failed step is logged by exception type and must not stop the others.
+              Future<void> clearStep(String label, Future<void> Function() step) async {
+                try {
+                  await step();
+                } catch (e) {
+                  allCleared = false;
+                  debugPrint('SettingsScreen: Clear All step "$label" failed (${e.runtimeType})');
+                }
+              }
+
+              // Disconnect storage and clear credentials first so no sync push can follow an empty database.
+              await clearStep('AI keys', () => AiKeyStorage.clearAll());
+              await clearStep('Supabase session', () => const SupabaseSecureStorage().removePersistedSession());
+              await clearStep('OneDrive', () => OneDriveStorage().signOut());
+              await clearStep('Google Drive', () => ref.read(googleDriveStorageProvider).disconnect());
+              // Drops any provider the service still holds so nothing keeps tokens or syncing.
+              await clearStep('Personal storage', () => ref.read(personalStorageServiceProvider).disconnect());
+
+              await clearStep('Database', () => MemoixDatabase.clearAll());
 
               // Delete on-disk image directories (recreated on demand via create(recursive: true))
-              final appDir = await getApplicationDocumentsDirectory();
-              for (final dirName in const [
-                'recipe_images',
-                'cellar_images',
-                'cheese_images',
-                'pizza_images',
-                'sandwich_images',
-                'smoking_images',
-                'modernist_images',
-              ]) {
-                final dir = Directory('${appDir.path}/$dirName');
-                if (await dir.exists()) await dir.delete(recursive: true);
-              }
-
-              // Clear AI provider API keys, Supabase auth session, and OneDrive and Google Drive credentials
-              await AiKeyStorage.clearAll();
-              await const SupabaseSecureStorage().removePersistedSession();
-              await OneDriveStorage().signOut();
-              await ref.read(googleDriveStorageProvider).disconnect();
-              // Drops any provider the service still holds so nothing keeps tokens or syncing.
-              await ref.read(personalStorageServiceProvider).disconnect();
+              await clearStep('Images', () async {
+                final appDir = await getApplicationDocumentsDirectory();
+                for (final dirName in const [
+                  'recipe_images',
+                  'cellar_images',
+                  'cheese_images',
+                  'pizza_images',
+                  'sandwich_images',
+                  'smoking_images',
+                  'modernist_images',
+                ]) {
+                  final dir = Directory('${appDir.path}/$dirName');
+                  if (await dir.exists()) await dir.delete(recursive: true);
+                }
+              });
 
               // Clear cloud and sync SharedPreferences keys
-              final prefs = await SharedPreferences.getInstance();
-              for (final key in const [
-                'personal_storage_provider_id',
-                'personal_storage_path',
-                'drive_repositories',
-                'google_drive_connected',
-                'google_drive_folder_id',
-                'google_drive_folder_path',
-                'supabase_sync_recipes',
-                'supabase_sync_ingredients',
-                'supabase_sync_pizzas',
-                'supabase_sync_sandwiches',
-                'supabase_sync_cellar_entries',
-                'supabase_sync_cheese_entries',
-                'supabase_sync_smoking_recipes',
-                'supabase_sync_courses',
-                'supabase_sync_scratch_pads',
-                'supabase_sync_user_entity_prefs',
-                'supabase_sync_meal_plans',
-                'supabase_sync_shopping_lists',
-                'supabase_sync_recipe_drafts',
-                'supabase_sync_cooking_logs',
-                'supabase_sync_recipe_images',
-              ]) {
-                await prefs.remove(key);
-              }
+              await clearStep('Preferences', () async {
+                final prefs = await SharedPreferences.getInstance();
+                for (final key in const [
+                  'personal_storage_provider_id',
+                  'personal_storage_path',
+                  'drive_repositories',
+                  'google_drive_connected',
+                  'google_drive_folder_id',
+                  'google_drive_folder_path',
+                  'supabase_sync_recipes',
+                  'supabase_sync_ingredients',
+                  'supabase_sync_pizzas',
+                  'supabase_sync_sandwiches',
+                  'supabase_sync_cellar_entries',
+                  'supabase_sync_cheese_entries',
+                  'supabase_sync_smoking_recipes',
+                  'supabase_sync_courses',
+                  'supabase_sync_scratch_pads',
+                  'supabase_sync_user_entity_prefs',
+                  'supabase_sync_meal_plans',
+                  'supabase_sync_shopping_lists',
+                  'supabase_sync_recipe_drafts',
+                  'supabase_sync_cooking_logs',
+                  'supabase_sync_recipe_images',
+                ]) {
+                  await prefs.remove(key);
+                }
+              });
 
               // Invalidate all domain providers to reflect the empty DB
               ref.invalidate(coursesProvider);
@@ -998,7 +1014,11 @@ class SettingsScreen extends ConsumerWidget {
               ref.invalidate(aiSettingsProvider);
               ref.invalidate(cookingStatsProvider);
 
-              MemoixSnackBar.show('All data cleared');
+              if (allCleared) {
+                MemoixSnackBar.show('All data cleared');
+              } else {
+                MemoixSnackBar.showError('Some data could not be cleared');
+              }
             },
             child: const Text('Clear All'),
           ),

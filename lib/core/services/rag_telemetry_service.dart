@@ -123,6 +123,14 @@ class RagTelemetryService {
     ModernistRecipe recipe, [
     String? rawSource,
   ]) async {
+    if (!recipe.isShared) {
+      debugPrint(
+        'RagTelemetryService: skipped — modernist recipe "${recipe.name}" '
+        'has isShared = false.',
+      );
+      return;
+    }
+
     if (!await _telemetryAvailable()) {
       debugPrint(
         'RagTelemetryService: modernist skipped — hash pepper missing or master Culinary Intelligence switch is OFF.',
@@ -437,6 +445,7 @@ class RagTelemetryService {
       final modernistRecipes = await modernistFetcher();
       final payloads = <ModernistKnowledgePayload>[];
       for (final recipe in modernistRecipes) {
+        if (!recipe.isShared) continue;
         final lineageHash = PayloadHasher.modernistLineageHash(recipe);
         final contentHash = PayloadHasher.modernistContentHash(recipe);
         final pairedRecipes = await _resolvePairings(recipe.pairedRecipeIds);

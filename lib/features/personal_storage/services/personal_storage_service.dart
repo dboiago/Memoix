@@ -239,8 +239,11 @@ class PersonalStorageService {
 
   /// Disconnect and clear the current provider
   Future<void> disconnect() async {
-    await _provider?.disconnect();
-    _provider = null;
+    try {
+      await _provider?.disconnect();
+    } finally {
+      _provider = null;
+    }
     
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_PrefKeys.connectedProviderId);
