@@ -70,6 +70,12 @@ abstract class SupabaseSyncService {
     }
   }
 
+  /// Cancels any pending debounced [sync] queued by [notifyChanged].
+  static void cancelPendingSync() {
+    _debounceTimer?.cancel();
+    _debounceTimer = null;
+  }
+
   static Future<void> sync() async {
     // Guard: must be signed in.
     if (!SupabaseAuthService.isSignedIn) return;

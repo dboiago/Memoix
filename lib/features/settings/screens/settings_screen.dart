@@ -943,6 +943,8 @@ class SettingsScreen extends ConsumerWidget {
 
               // Disconnect storage and clear credentials first so no sync push can follow an empty database.
               await clearStep('AI keys', () => AiKeyStorage.clearAll());
+              await clearStep('Supabase sign-out', () => SupabaseAuthService.signOut());
+              await clearStep('Supabase queued sync', () async => SupabaseSyncService.cancelPendingSync());
               await clearStep('Supabase session', () => const SupabaseSecureStorage().removePersistedSession());
               await clearStep('OneDrive', () => OneDriveStorage().signOut());
               await clearStep('Google Drive', () => ref.read(googleDriveStorageProvider).disconnect());
