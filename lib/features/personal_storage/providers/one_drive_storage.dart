@@ -63,12 +63,7 @@ class OneDriveStorage implements CloudStorageProvider, PersonalStorageProvider {
   ];
 
   final FlutterAppAuth _appAuth = const FlutterAppAuth();
-  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage(
-    aOptions: AndroidOptions(
-      migrateOnAlgorithmChange: true,
-      migrateWithBackup: true,
-    ),
-  );
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
 
   // State
   String? _accessToken;

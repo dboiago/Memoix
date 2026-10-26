@@ -41,6 +41,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
     // Migrate: if legacy JSON contained plain-text apiKey values,
     // move them into secure storage and strip them from SharedPreferences.
     var migrated = false;
+    var corrected = false;
     final migratedProviders = <AiProvider, AiProviderConfig>{};
 
     for (final provider in AiProvider.values) {
@@ -53,6 +54,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
       // If we detect a key in the parsed config but secure storage is empty,
       // move it across.
       if (!hasKey && raw != null) {
+        var legacyFound = false;
         try {
           final jsonMap = jsonDecode(raw) as Map<String, dynamic>;
           final providersMap =
@@ -61,6 +63,7 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
           if (pJson != null) {
             final legacyKey = pJson['apiKey'] as String?;
             if (legacyKey != null && legacyKey.isNotEmpty) {
+              legacyFound = true;
               await AiKeyStorage.saveToken(provider, legacyKey);
               config = config.copyWith(hasKeyStored: true);
               migrated = true;
@@ -68,6 +71,12 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
           }
         } catch (_) {
           // Ignore parse errors during migration
+        }
+
+        // The settings claim a key but none can be read, so drop the claim.
+        if (!legacyFound && config.hasKeyStored) {
+          config = config.copyWith(hasKeyStored: false, enabled: false);
+          corrected = true;
         }
       } else {
         config = config.copyWith(hasKeyStored: hasKey);
@@ -78,8 +87,8 @@ class AiSettingsNotifier extends StateNotifier<AiSettings> {
 
     state = loaded.copyWith(providers: migratedProviders);
 
-    if (migrated) {
-      // Re-save without legacy apiKey fields
+    if (migrated || corrected) {
+      // Re-save without legacy apiKey fields and with corrected key flags
       await _save();
     }
   }

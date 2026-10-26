@@ -12,15 +12,7 @@ import '../../import/ai/ai_provider.dart';
 class AiKeyStorage {
   AiKeyStorage._();
 
-  static const _storage = FlutterSecureStorage(
-    // encryptedSharedPreferences is kept only to trigger the migration; removed in the 11.x step.
-    aOptions: AndroidOptions(
-      // ignore: deprecated_member_use
-      encryptedSharedPreferences: true,
-      migrateOnAlgorithmChange: true,
-      migrateWithBackup: true,
-    ),
-  );
+  static const _storage = FlutterSecureStorage();
 
   static const _prefix = 'ai_api_key_';
 
