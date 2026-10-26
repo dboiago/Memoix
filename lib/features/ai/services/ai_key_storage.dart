@@ -5,15 +5,21 @@ import '../../import/ai/ai_provider.dart';
 
 /// Secure storage for AI provider API keys.
 ///
-/// Uses [FlutterSecureStorage] (Keychain on iOS, EncryptedSharedPreferences
-/// on Android) so keys are never stored in plain text.
+/// Uses [FlutterSecureStorage] (Keychain on iOS, Keystore-backed encrypted
+/// storage on Android) so keys are never stored in plain text.
 ///
 /// Keys are namespaced per [AiProvider] and never logged or printed.
 class AiKeyStorage {
   AiKeyStorage._();
 
   static const _storage = FlutterSecureStorage(
-    aOptions: AndroidOptions(encryptedSharedPreferences: true),
+    // encryptedSharedPreferences is kept only to trigger the migration; removed in the 11.x step.
+    aOptions: AndroidOptions(
+      // ignore: deprecated_member_use
+      encryptedSharedPreferences: true,
+      migrateOnAlgorithmChange: true,
+      migrateWithBackup: true,
+    ),
   );
 
   static const _prefix = 'ai_api_key_';

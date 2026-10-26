@@ -6,7 +6,13 @@ class SupabaseSecureStorage extends LocalStorage {
   const SupabaseSecureStorage();
 
   static const _storage = FlutterSecureStorage(
-    aOptions: AndroidOptions(encryptedSharedPreferences: true),
+    // encryptedSharedPreferences is kept only to trigger the migration; removed in the 11.x step.
+    aOptions: AndroidOptions(
+      // ignore: deprecated_member_use
+      encryptedSharedPreferences: true,
+      migrateOnAlgorithmChange: true,
+      migrateWithBackup: true,
+    ),
     iOptions: IOSOptions(accessibility: KeychainAccessibility.first_unlock),
   );
 
