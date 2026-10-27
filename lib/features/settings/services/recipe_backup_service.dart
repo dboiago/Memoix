@@ -135,20 +135,18 @@ class RecipeBackupService {
 
     // On desktop (Windows/macOS/Linux), use save file dialog
     if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
-      final outputPath = await FilePicker.platform.saveFile(
+      final savedUri = await FilePicker.saveFile(
         dialogTitle: 'Save Recipe Backup',
         fileName: filename,
-        type: FileType.custom,
-        allowedExtensions: ['json'],
+        bytes: Uint8List.fromList(utf8.encode(jsonString)),
+        mimeType: 'application/json',
       );
-      
-      if (outputPath == null) {
+
+      if (savedUri == null) {
         return null; // User cancelled
       }
-      
-      final file = File(outputPath);
-      await file.writeAsString(jsonString);
-      return outputPath;
+
+      return savedUri.toFilePath();
     }
 
     // On mobile, save to documents and share
@@ -181,7 +179,7 @@ class RecipeBackupService {
   ///     [ExternalImportReviewScreen] so the user can confirm which recipes
   ///     to import.
   Future<RecipeImportFileResult> importRecipes() async {
-    final result = await FilePicker.platform.pickFiles(
+    final file = await FilePicker.pickFile(
       type: FileType.custom,
       allowedExtensions: [
         'json',
@@ -189,26 +187,17 @@ class RecipeBackupService {
         'paprikarecipes', 'paprikarecipe',
         'zip',
       ],
-      allowMultiple: false,
     );
 
-    if (result == null || result.files.isEmpty) {
+    if (file == null) {
       return ImportCancelled();
     }
 
-    final file = result.files.first;
     final ext = file.name.split('.').last.toLowerCase();
 
     // External app formats (Mela, Paprika, …)
     if (ExternalRecipeImporter.supportsExtension(ext)) {
-      final Uint8List bytes;
-      if (file.bytes != null) {
-        bytes = file.bytes!;
-      } else if (file.path != null) {
-        bytes = await File(file.path!).readAsBytes();
-      } else {
-        throw Exception('Could not read file');
-      }
+      final bytes = await file.readAsBytes();
 
       final summary = await ExternalRecipeImporter().parse(ext, bytes);
 
@@ -226,14 +215,7 @@ class RecipeBackupService {
     }
 
     // JSON file — read bytes once, then sniff content to determine format.
-    final Uint8List bytes;
-    if (file.bytes != null) {
-      bytes = file.bytes!;
-    } else if (file.path != null) {
-      bytes = await File(file.path!).readAsBytes();
-    } else {
-      throw Exception('Could not read file');
-    }
+    final bytes = await file.readAsBytes();
 
     // Attempt UTF-8 + JSON decode for content sniffing.
     // If either step fails, fall through to the Memoix backup path and let it
@@ -368,7 +350,7 @@ class RecipeBackupService {
   Future<int?> exportByCourse() async {
     // On desktop, use folder picker
     if (!kIsWeb && (Platform.isWindows || Platform.isMacOS || Platform.isLinux)) {
-      final outputDir = await FilePicker.platform.getDirectoryPath(
+      final outputDir = await FilePicker.getDirectoryPath(
         dialogTitle: 'Select folder for course JSON files',
       );
 
