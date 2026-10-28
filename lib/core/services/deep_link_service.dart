@@ -19,6 +19,11 @@ class DeepLinkService {
   final Ref _ref;
   StreamSubscription<Uri>? _subscription;
 
+  // app_links 7.x also emits the initial link on uriLinkStream, so it can arrive twice.
+  static const Duration _duplicateWindow = Duration(seconds: 2);
+  String? _lastHandledLink;
+  DateTime? _lastHandledAt;
+
   DeepLinkService(this._ref);
 
   /// Initialize and start listening for deep links
@@ -27,10 +32,10 @@ class DeepLinkService {
 
     // Handle initial link if app was opened via deep link
     try {
-      final initialUri = await _appLinks.getInitialAppLink();
+      final initialUri = await _appLinks.getInitialLink();
       if (initialUri != null && initialUri.scheme == 'memoix') {
         if (!context.mounted) return;
-        await _handleDeepLink(context, initialUri);
+        await _handleGuarded(context, initialUri);
       }
     } catch (e) {
       debugPrint('Error getting initial deep link: $e');
@@ -40,9 +45,25 @@ class DeepLinkService {
     _subscription = _appLinks.uriLinkStream.listen((uri) {
       if (uri.scheme == 'memoix') {
         if (!context.mounted) return;
-        _handleDeepLink(context, uri);
+        _handleGuarded(context, uri);
       }
     });
+  }
+
+  /// Handles [uri] unless the same link was handled within [_duplicateWindow].
+  Future<void> _handleGuarded(BuildContext context, Uri uri) async {
+    final link = uri.toString();
+    final lastAt = _lastHandledAt;
+    if (_lastHandledLink == link &&
+        lastAt != null &&
+        DateTime.now().difference(lastAt) < _duplicateWindow) {
+      return;
+    }
+    _lastHandledLink = link;
+    _lastHandledAt = DateTime.now();
+    await _handleDeepLink(context, uri);
+    // Handling can wait on a dialog; restart the window so a late stream replay is still caught.
+    _lastHandledAt = DateTime.now();
   }
 
   /// Stop listening for deep links
