@@ -31,6 +31,13 @@ class ApiConfig {
   /// Note: Android uses SHA-1 fingerprint verification, no secret needed
   static String get googleClientIdAndroid =>
       dotenv.maybeGet('GOOGLE_CLIENT_ID_ANDROID') ?? _fallbackAndroidClientId;
+
+  /// Web application client ID used as serverClientId by google_sign_in on Android
+  /// Requires GOOGLE_SERVER_CLIENT_ID in .env — returns null if absent or empty
+  static String? get googleServerClientId {
+    final value = dotenv.maybeGet('GOOGLE_SERVER_CLIENT_ID')?.trim();
+    return (value == null || value.isEmpty) ? null : value;
+  }
       
   // DEPRECATED: Legacy IV for V1 Google Drive integration
   // Revoked 2025-11-14 following the security audit

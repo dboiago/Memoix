@@ -52,8 +52,34 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     ApiConfig.googleClientSecretDesktop,
   );
 
-  /// Google Sign-In instance for mobile platforms
-  final GoogleSignIn _googleSignIn = GoogleSignIn(scopes: _scopes);
+  /// Completes once GoogleSignIn.instance is initialized; shared across instances
+  static Future<void>? _googleSignInReady;
+
+  /// Initializes the google_sign_in singleton once per process (mobile only)
+  Future<void> _ensureGoogleSignInReady() {
+    final pending = _googleSignInReady;
+    if (pending != null) {
+      return pending;
+    }
+
+    final serverClientId = ApiConfig.googleServerClientId;
+    if (serverClientId == null && Platform.isAndroid) {
+      return Future.error(
+        Exception('Google Drive sign-in is not configured in this build.'),
+      );
+    }
+
+    final ready = () async {
+      try {
+        await GoogleSignIn.instance.initialize(serverClientId: serverClientId);
+      } catch (_) {
+        _googleSignInReady = null;
+        rethrow;
+      }
+    }();
+    _googleSignInReady = ready;
+    return ready;
+  }
 
   /// Secure storage for the desktop OAuth tokens
   final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
@@ -212,7 +238,8 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   Future<void> disconnect() async {
     try {
       if (_isMobile) {
-        await _googleSignIn.signOut();
+        await _ensureGoogleSignInReady();
+        await GoogleSignIn.instance.signOut();
       }
     } catch (e) {
       debugPrint('GoogleDriveStorage: Sign out error: $e');
@@ -357,13 +384,20 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
           }
         } else if (_isMobile) {
           // Mobile: Try silent sign-in first
-          final account = await _googleSignIn.signInSilently();
+          await _ensureGoogleSignInReady();
+          final account =
+              await GoogleSignIn.instance.attemptLightweightAuthentication();
           if (account == null) {
             // Silent sign-in failed - trigger interactive sign-in
             debugPrint('GoogleDriveStorage: Silent sign-in failed, triggering interactive sign-in');
-            final signedInAccount = await _googleSignIn.signIn();
-            if (signedInAccount == null) {
-              throw Exception('User cancelled sign-in');
+            final GoogleSignInAccount signedInAccount;
+            try {
+              signedInAccount = await GoogleSignIn.instance.authenticate();
+            } on GoogleSignInException catch (e) {
+              if (e.code == GoogleSignInExceptionCode.canceled) {
+                throw Exception('User cancelled sign-in');
+              }
+              rethrow;
             }
             await _initializeDriveApiFromMobile(signedInAccount);
             await _setupMemoixFolder();
@@ -591,14 +625,21 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   /// Connect on mobile using google_sign_in
   Future<bool> _connectMobile() async {
+    await _ensureGoogleSignInReady();
+
     // Sign out first to ensure we get a fresh token
-    await _googleSignIn.signOut();
+    await GoogleSignIn.instance.signOut();
 
     // Trigger OAuth consent flow
-    final account = await _googleSignIn.signIn();
-    if (account == null) {
-      // User cancelled
-      return false;
+    final GoogleSignInAccount account;
+    try {
+      account = await GoogleSignIn.instance.authenticate();
+    } on GoogleSignInException catch (e) {
+      if (e.code == GoogleSignInExceptionCode.canceled) {
+        // User cancelled
+        return false;
+      }
+      rethrow;
     }
 
     // Initialize Drive API
@@ -642,7 +683,9 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   /// Restore mobile session (silent sign-in)
   Future<void> _restoreMobileSession() async {
-    final account = await _googleSignIn.signInSilently();
+    await _ensureGoogleSignInReady();
+    final account =
+        await GoogleSignIn.instance.attemptLightweightAuthentication();
     if (account != null) {
       await _initializeDriveApiFromMobile(account);
     } else {
@@ -752,7 +795,22 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
 
   /// Initialize Drive API from mobile sign-in
   Future<void> _initializeDriveApiFromMobile(GoogleSignInAccount account) async {
-    final authHeaders = await account.authHeaders;
+    final authorizationClient = account.authorizationClient;
+    var authHeaders = await authorizationClient.authorizationHeaders(_scopes);
+    if (authHeaders == null) {
+      try {
+        await authorizationClient.authorizeScopes(_scopes);
+      } on GoogleSignInException catch (e) {
+        if (e.code == GoogleSignInExceptionCode.canceled) {
+          throw Exception('Google Drive access was not granted.');
+        }
+        rethrow;
+      }
+      authHeaders = await authorizationClient.authorizationHeaders(_scopes);
+    }
+    if (authHeaders == null) {
+      throw Exception('Google Drive access was not granted.');
+    }
     _authClient = _GoogleAuthClient(authHeaders);
     _driveApi = drive.DriveApi(_authClient!);
   }
