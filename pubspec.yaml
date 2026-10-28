@@ -38,7 +38,7 @@ dependencies:
   share_plus: ^13.3.1
   qr_flutter: ^4.1.0
   mobile_scanner: ^7.2.0
-  app_links: ^3.5.1
+  app_links: 7.2.2
   
   # Handles Android APK download & install intent
   ota_update: ^7.1.0
@@ -60,7 +60,7 @@ dependencies:
   vibration: ^3.1.8
   
   # External Storage
-  supabase_flutter: 2.10.2
+  supabase_flutter: 2.18.3
   device_info_plus: ^13.3.0
   google_sign_in: ^6.2.2
   googleapis: ^14.0.0
