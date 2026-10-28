@@ -22,7 +22,7 @@ dependencies:
   
   # Networking
   http: ^1.2.0
-  connectivity_plus: ^6.1.1
+  connectivity_plus: 7.3.2
   package_info_plus: ^10.2.2
   webview_flutter: ^4.10.0
   
@@ -44,14 +44,14 @@ dependencies:
   ota_update: ^7.1.0
 
   # Utilities
-  archive: ^3.6.1
+  archive: 4.5.2
   uuid: ^4.5.3
   intl: ^0.20.2
   collection: ^1.18.0
   url_launcher: ^6.3.0
   shared_preferences: ^2.2.2
   file_picker: ^13.3.0
-  wakelock_plus: ^1.5.1
+  wakelock_plus: 1.8.2
   flutter_ringtone_player: ^4.0.0+3
   audioplayers: ^6.0.0
   crypto: ^3.0.0
@@ -62,9 +62,9 @@ dependencies:
   # External Storage
   supabase_flutter: 2.18.3
   device_info_plus: ^13.3.0
-  google_sign_in: ^6.2.2
-  googleapis: ^14.0.0
-  googleapis_auth: ^1.6.0
+  google_sign_in: 7.2.0
+  googleapis: 17.0.0
+  googleapis_auth: 2.3.5
   flutter_appauth: ^6.0.2
   flutter_secure_storage: ^11.2.0
   
@@ -75,7 +75,7 @@ dependencies:
   flutter_dotenv: ^5.2.1
 
   # PDF generation & sharing
-  pdf: ^3.10.8
+  pdf: 3.13.1
 
   path: any
 dev_dependencies:
