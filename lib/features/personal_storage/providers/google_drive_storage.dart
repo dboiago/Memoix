@@ -102,6 +102,9 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   /// Desktop credentials (for token refresh)
   auth_io.AccessCredentials? _desktopCredentials;
 
+  /// Persists credentials refreshed by the desktop client
+  StreamSubscription<auth_io.AccessCredentials>? _credentialUpdates;
+
   // --- Platform detection ---
 
   /// Returns true if running on a desktop platform (Windows, macOS, Linux)
@@ -246,6 +249,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     }
 
     _driveApi = null;
+    await _cancelCredentialUpdates();
     _authClient?.close();
     _authClient = null;
     _desktopCredentials = null;
@@ -660,9 +664,11 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
       _launchAuthUrl,
     );
 
+    await _cancelCredentialUpdates();
     _authClient = client;
     _desktopCredentials = client.credentials;
     _driveApi = drive.DriveApi(client);
+    _watchCredentialUpdates(client);
 
     // Save credentials for later restoration
     await _saveDesktopCredentials(_desktopCredentials!);
@@ -752,13 +758,34 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
       _desktopCredentials = credentials;
     }
 
-    // Create authenticated client
-    final client = auth_io.authenticatedClient(
-      http.Client(),
+    // Create a client that refreshes the access token on its own
+    final client = auth_io.autoRefreshingClient(
+      _desktopClientId,
       _desktopCredentials!,
+      http.Client(),
     );
+    await _cancelCredentialUpdates();
     _authClient = client;
     _driveApi = drive.DriveApi(client);
+    _watchCredentialUpdates(client);
+  }
+
+  /// Persist each credential update from [client]; replaces any earlier subscription
+  void _watchCredentialUpdates(auth_io.AutoRefreshingAuthClient client) {
+    _credentialUpdates = client.credentialUpdates.listen((credentials) async {
+      _desktopCredentials = credentials;
+      try {
+        await _saveDesktopCredentials(credentials);
+      } catch (e) {
+        debugPrint('GoogleDriveStorage: Saving refreshed token failed (${e.runtimeType})');
+      }
+    });
+  }
+
+  Future<void> _cancelCredentialUpdates() async {
+    final subscription = _credentialUpdates;
+    _credentialUpdates = null;
+    await subscription?.cancel();
   }
 
   /// Save desktop credentials to secure storage
@@ -822,7 +849,12 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     if (authHeaders == null) {
       throw Exception('Google Drive access was not granted.');
     }
-    _authClient = _GoogleAuthClient(authHeaders);
+    await _cancelCredentialUpdates();
+    _authClient = _GoogleAuthClient(
+      () => account.authorizationClient.authorizationHeaders(_scopes),
+      (accessToken) => account.authorizationClient
+          .clearAuthorizationToken(accessToken: accessToken),
+    );
     _driveApi = drive.DriveApi(_authClient!);
   }
 
@@ -1214,16 +1246,55 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   }
 }
 
-/// HTTP client wrapper that adds Google auth headers (for mobile)
+/// HTTP client wrapper that adds current Google auth headers to every request (for mobile)
 class _GoogleAuthClient extends http.BaseClient {
-  final Map<String, String> _headers;
+  final Future<Map<String, String>?> Function() _headerProvider;
+  final Future<void> Function(String accessToken) _onUnauthorized;
   final http.Client _client = http.Client();
 
-  _GoogleAuthClient(this._headers);
+  _GoogleAuthClient(this._headerProvider, this._onUnauthorized);
+
+  static const _bearerPrefix = 'Bearer ';
 
   @override
-  Future<http.StreamedResponse> send(http.BaseRequest request) {
-    return _client.send(request..headers.addAll(_headers));
+  Future<http.StreamedResponse> send(http.BaseRequest request) async {
+    final headers = await _headerProvider();
+    if (headers == null) {
+      throw Exception(
+        'Google Drive access has expired. Reconnect Google Drive in settings.',
+      );
+    }
+    request.headers.addAll(headers);
+    final response = await _client.send(request);
+    if (response.statusCode != 401) {
+      return response;
+    }
+
+    final authorization = request.headers['Authorization'];
+    if (authorization != null && authorization.startsWith(_bearerPrefix)) {
+      await _onUnauthorized(authorization.substring(_bearerPrefix.length));
+    }
+
+    // Streamed requests (uploads) cannot be replayed; the next call gets a fresh token.
+    if (request is! http.Request) {
+      return response;
+    }
+
+    await response.stream.drain<void>();
+    final freshHeaders = await _headerProvider();
+    if (freshHeaders == null) {
+      throw Exception(
+        'Google Drive access has expired. Reconnect Google Drive in settings.',
+      );
+    }
+    final retry = http.Request(request.method, request.url)
+      ..headers.addAll(request.headers)
+      ..headers.addAll(freshHeaders)
+      ..bodyBytes = request.bodyBytes
+      ..followRedirects = request.followRedirects
+      ..maxRedirects = request.maxRedirects
+      ..persistentConnection = request.persistentConnection;
+    return _client.send(retry);
   }
 }
 
