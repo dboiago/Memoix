@@ -399,10 +399,10 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
               }
               rethrow;
             }
-            await _initializeDriveApiFromMobile(signedInAccount);
+            await _initializeDriveApiFromMobile(signedInAccount, interactive: true);
             await _setupMemoixFolder();
           } else {
-            await _initializeDriveApiFromMobile(account);
+            await _initializeDriveApiFromMobile(account, interactive: true);
           }
         }
       } catch (e) {
@@ -643,7 +643,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     }
 
     // Initialize Drive API
-    await _initializeDriveApiFromMobile(account);
+    await _initializeDriveApiFromMobile(account, interactive: true);
 
     // Get or create the Memoix folder
     await _setupMemoixFolder();
@@ -687,7 +687,7 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
     final account =
         await GoogleSignIn.instance.attemptLightweightAuthentication();
     if (account != null) {
-      await _initializeDriveApiFromMobile(account);
+      await _initializeDriveApiFromMobile(account, interactive: false);
     } else {
       // Token expired or revoked - clear connection state
       await _clearStoredState();
@@ -794,9 +794,20 @@ class GoogleDriveStorage implements CloudStorageProvider, PersonalStorageProvide
   }
 
   /// Initialize Drive API from mobile sign-in
-  Future<void> _initializeDriveApiFromMobile(GoogleSignInAccount account) async {
+  ///
+  /// When [interactive] is false, no consent prompt is shown; missing
+  /// authorization is treated like a missing account during restore.
+  Future<void> _initializeDriveApiFromMobile(
+    GoogleSignInAccount account, {
+    required bool interactive,
+  }) async {
     final authorizationClient = account.authorizationClient;
     var authHeaders = await authorizationClient.authorizationHeaders(_scopes);
+    if (authHeaders == null && !interactive) {
+      // Token expired or revoked - clear connection state
+      await _clearStoredState();
+      return;
+    }
     if (authHeaders == null) {
       try {
         await authorizationClient.authorizeScopes(_scopes);
