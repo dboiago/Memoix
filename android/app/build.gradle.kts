@@ -20,7 +20,7 @@ android {
     namespace = "io.github.dboiago.memoix"
     compileSdk = flutter.compileSdkVersion
     // NDK r27+ is required for 16 KB memory page size alignment (Android 15+)
-    ndkVersion = "27.0.12077973"
+    ndkVersion = "28.2.13676358"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
